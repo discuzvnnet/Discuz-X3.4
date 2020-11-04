@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4]]></item>
+	<item id="Time"><![CDATA[2020-01-16 13:01]]></item>
+	<item id="From"><![CDATA[Multirom.us]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[Ảnh trong slide]]></item>
+			<item id="identifier"><![CDATA[img_album]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[img_album/]]></item>
+			<item id="copyright"><![CDATA[Multirom.us]]></item>
+			<item id="version"><![CDATA[2.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[img_album]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[img_album]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[[Phổ cập]Plug-in switch]]></item>
+				<item id="description"><![CDATA[Công tắc trượt]]></item>
+				<item id="variable"><![CDATA[switch]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=Mở PC + Di động
+2=Chỉ mở phiên bản máy tính
+3=Chỉ mở phiên bản di động]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[[Phổ cập]Chế độ phân tích cú pháp]]></item>
+				<item id="description"><![CDATA[Chế độ "phân tích cú pháp tự động" có nghĩa là: Tất cả các hình ảnh trong bài đăng đều được phân tích cú pháp. (Lưu ý: Nếu không có cặp thẻ [TUCE], chức năng ghi chú ảnh sẽ không hợp lệ!)]]></item>
+				<item id="variable"><![CDATA[parse_mode]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=Chỉ phân tích vùng nhãn [TUCE]  
+2=Chế độ phân tích cú pháp tự động]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[[Phổ cập]Phân tích sàn]]></item>
+				<item id="description"><![CDATA[Chọn tầng cần phân tích cú pháp dưới dạng trình chiếu. Theo mặc định, chỉ có tầng "Chủ sở hữu" được phân tích cú pháp.]]></item>
+				<item id="variable"><![CDATA[parse_floor]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=Chỉ phân tích tầng chính
+2=Phân tích tất cả các tầng]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[[Phổ cập]Ghi chú hình ảnh]]></item>
+				<item id="description"><![CDATA[Văn bản của nhận xét ảnh được chọn từ thẻ [TUCE][/TUCE]. Văn bản đằng sau mỗi bức tranh được sử dụng làm ghi chú của bức tranh này. (Lưu ý: Nếu không có cặp thẻ [TUCE], chức năng ghi chú ảnh sẽ không hợp lệ!)]]></item>
+				<item id="variable"><![CDATA[img_tips_mode]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=Bật (ghi chú chỉ được hiển thị trong album)
+2=Bật (ghi chú được hiển thị bên ngoài album)
+3=Tắt (ghi chú không được hiển thị bên trong hoặc bên ngoài album)
+4=Tắt (ghi chú được hiển thị bên ngoài album)]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[[Phổ cập]Cho phép phần]]></item>
+				<item id="description"><![CDATA[Nhãn slide của các phần không được bật sẽ không phân tích nhiều hình ảnh thành chế độ album.[Lưu ý]: Cài đặt này hợp lệ cho "Phiên bản di động" + "Phiên bản máy tính".]]></item>
+				<item id="variable"><![CDATA[allow_fids]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+					<item id="1"><![CDATA[36]]></item>
+					<item id="2"><![CDATA[2]]></item>
+					<item id="3"><![CDATA[63]]></item>
+					<item id="4"><![CDATA[64]]></item>
+					<item id="5"><![CDATA[71]]></item>
+					<item id="6"><![CDATA[68]]></item>
+					<item id="7"><![CDATA[41]]></item>
+					<item id="8"><![CDATA[69]]></item>
+					<item id="9"><![CDATA[70]]></item>
+					<item id="10"><![CDATA[38]]></item>
+					<item id="11"><![CDATA[39]]></item>
+					<item id="12"><![CDATA[66]]></item>
+					<item id="13"><![CDATA[52]]></item>
+					<item id="14"><![CDATA[51]]></item>
+					<item id="15"><![CDATA[53]]></item>
+					<item id="16"><![CDATA[50]]></item>
+					<item id="17"><![CDATA[49]]></item>
+					<item id="18"><![CDATA[48]]></item>
+					<item id="19"><![CDATA[47]]></item>
+					<item id="20"><![CDATA[46]]></item>
+					<item id="21"><![CDATA[45]]></item>
+					<item id="22"><![CDATA[44]]></item>
+					<item id="23"><![CDATA[43]]></item>
+					<item id="24"><![CDATA[42]]></item>
+					<item id="25"><![CDATA[54]]></item>
+					<item id="26"><![CDATA[55]]></item>
+					<item id="27"><![CDATA[56]]></item>
+					<item id="28"><![CDATA[57]]></item>
+					<item id="29"><![CDATA[58]]></item>
+					<item id="30"><![CDATA[59]]></item>
+					<item id="31"><![CDATA[60]]></item>
+					<item id="32"><![CDATA[61]]></item>
+				</item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[[Phổ cập]Cho phép nhóm người dùng]]></item>
+				<item id="description"><![CDATA[Nhãn slide album của nhóm người dùng không kích hoạt sẽ không phân tích nhiều hình ảnh sang chế độ album[Lưu ý]: Cài đặt này hợp lệ cho "Phiên bản di động" + "Phiên bản máy tính".]]></item>
+				<item id="variable"><![CDATA[allow_gids]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[10]]></item>
+					<item id="1"><![CDATA[11]]></item>
+					<item id="2"><![CDATA[12]]></item>
+					<item id="3"><![CDATA[13]]></item>
+					<item id="4"><![CDATA[14]]></item>
+					<item id="5"><![CDATA[15]]></item>
+					<item id="6"><![CDATA[20]]></item>
+					<item id="7"><![CDATA[16]]></item>
+					<item id="8"><![CDATA[17]]></item>
+					<item id="9"><![CDATA[18]]></item>
+					<item id="10"><![CDATA[19]]></item>
+					<item id="11"><![CDATA[1]]></item>
+					<item id="12"><![CDATA[2]]></item>
+					<item id="13"><![CDATA[3]]></item>
+				</item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[[PC]Trình chiếu]]></item>
+				<item id="description"><![CDATA[Chức năng trình chiếu]]></item>
+				<item id="variable"><![CDATA[play_mode]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[0=Hướng dẫn sử dụng (có công tắc phát lại)
+1=Tự động 1 (có công tắc phát lại)
+2=Tự động 2 (không có công tắc phát lại, tạm dừng phát lại khi di chuột]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[[PC]Tốc độ chơi]]></item>
+				<item id="description"><![CDATA[Cài đặt tốc độ trình chiếu tính bằng mili giây; phạm vi hợp lệ:2000~9000，Giá trị mặc định：3500.(Lưu ý: 1 giây bằng 1000 mili giây)]]></item>
+				<item id="variable"><![CDATA[play_time]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[3500]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[[PC]Tốc độ hoạt hình]]></item>
+				<item id="description"><![CDATA[Đặt tốc độ của hình ảnh chuyển tiếp (fade in).Nếu hình ảnh quá lớn, hiện tượng chuyển đổi hình ảnh có thể không được mượt mà.]]></item>
+				<item id="variable"><![CDATA[transform_speeds]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[6]]></item>
+				<item id="extra"><![CDATA[1=Đóng
+3=Nhanh hơn
+6=Trung bình
+12=Hơi chậm]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[[PC]Màu nền]]></item>
+				<item id="description"><![CDATA[Đặt màu nền của album]]></item>
+				<item id="variable"><![CDATA[bgcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FCFCFC]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[[PC]Màu viền]]></item>
+				<item id="description"><![CDATA[Đặt màu đường viền của album]]></item>
+				<item id="variable"><![CDATA[bdcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#EFEFEF]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[[PC]Chiều rộng bản đồ]]></item>
+				<item id="description"><![CDATA[Đặt chiều rộng của album. Để xem xét thẩm mỹ, đây là một vài tùy chọn được xác định trước.]]></item>
+				<item id="variable"><![CDATA[width_size]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[6]]></item>
+				<item id="extra"><![CDATA[3=Mặt bích
+4=Bốn ô
+5=Năm ô
+6=Sáu ô
+7=Bảy ô
+8=Tám ô
+9=Chín ô]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[13]]></item>
+				<item id="title"><![CDATA[[PC]Chiều cao bản đồ]]></item>
+				<item id="description"><![CDATA[Ở chế độ chiều cao cố định: Mục này đặt chiều cao cố định của album. Ở chế độ thích ứng chiều cao: mục này có thể kiểm soát chiều cao tối đa của album để không vượt quá giá trị này.(phạm vi hợp lệ là: 300~1000, giá trị mặc định: 500)]]></item>
+				<item id="variable"><![CDATA[height_px]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[500]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[[PC]Chiều cao tối thiểu]]></item>
+				<item id="description"><![CDATA[Chỉ hoạt động ở chế độ thích ứng chiều cao: đặt chiều cao tối thiểu của vùng hình ảnh lớn của album.Bằng cách này, khi hình ảnh quá nhỏ, album sẽ trông đẹp hơn. (Phạm vi hợp lệ: 200~500, mặc định: 350)]]></item>
+				<item id="variable"><![CDATA[min_height_px]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[200]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[15]]></item>
+				<item id="title"><![CDATA[[PC]Chế độ hiển thị bản đồ]]></item>
+				<item id="description"><![CDATA[Chế độ thích ứng chiều cao: đề cập đến chiều cao của album sẽ dựa trên "chiều rộng của album".]]></item>
+				<item id="variable"><![CDATA[height_mode]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[1=Chế độ chiều cao cố định
+2=Chế độ thích ứng cao]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[16]]></item>
+				<item id="title"><![CDATA[[di động] Chế độ bản đồ]]></item>
+				<item id="description"><![CDATA[Chế độ thích ứng cao: Chiều cao của album sẽ dựa trên chiều rộng và chiều cao của hình ảnh.]]></item>
+				<item id="variable"><![CDATA[mobile_height_mode]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=Chế độ thích ứng cao
+2=Chế độ chiều cao cố định]]></item>
+			</item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[17]]></item>
+				<item id="title"><![CDATA[[di động] Chiều cao (%)]]></item>
+				<item id="description"><![CDATA[Tham chiếu là chiều cao bên trong cửa sổ "di động", giá trị hợp lệ: 80%~120%. Chiều cao của album sẽ bị ảnh hưởng bởi "Chiều rộng của album + mục cài đặt này".]]></item>
+				<item id="variable"><![CDATA[mobile_height]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[100]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="17">
+				<item id="displayorder"><![CDATA[18]]></item>
+				<item id="title"><![CDATA[[di động] Chiều cao tối thiểu]]></item>
+				<item id="description"><![CDATA[Đặt chiều cao tối thiểu của album (tính bằng pixel).Cài đặt này hợp lệ ở cả chế độ chiều cao cố định và chế độ thích ứng chiều cao.Ưu tiên cao hơn chiều cao tối đa (%).（Phạm vi hiệu quả:200~350, mặc định là:280）]]></item>
+				<item id="variable"><![CDATA[mobile_min_height]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[280]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="18">
+				<item id="displayorder"><![CDATA[19]]></item>
+				<item id="title"><![CDATA[[di động] Màu nền]]></item>
+				<item id="description"><![CDATA[Đặt màu nền của album]]></item>
+				<item id="variable"><![CDATA[mobile_bgcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#DDDDDD]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="19">
+				<item id="displayorder"><![CDATA[20]]></item>
+				<item id="title"><![CDATA[[di động] Màu viền]]></item>
+				<item id="description"><![CDATA[Đặt màu của viền ngoài của album]]></item>
+				<item id="variable"><![CDATA[mobile_bdcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#D0D0D0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="full_space"><![CDATA[　]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="tuce"><![CDATA[Tập bản đồ]]></item>
+				<item id="tip1"><![CDATA[Thêm album (vui lòng chọn ảnh trước, sau đó nhấp vào nút này)]]></item>
+				<item id="close"><![CDATA[Đóng]]></item>
+				<item id="shiyong_fangfa"><![CDATA[<b>Cách sử dụng nhãn album:</b><br><span style="color:red;">Vui lòng chọn nhiều ảnh trong "Đăng nội dung" trước, sau đó nhấp vào nút "Thêm album"!</span><br><span class="xg1">(Điều này sẽ nhanh chóng bọc nhãn album bên ngoài khu vực đã chọn:<span class="xi1">[TUCE] [/TUCE]</span>）</span><br/><br/><span style="color:;">Điểm của hoạt động này là,</span>Đặt hình ảnh trong thẻ.<span class="xi1">[TUCE] [/TUCE]</span>. Sau khi gửi bài đăng, hình ảnh trong thẻ này sẽ được phân tích thành chế độ album.</span><br/><br/><b>Ghi chú hình ảnh:</b><br/>Trong phạm vi của nhãn album, sử dụng văn bản dưới mỗi hình ảnh như một nhận xét cho hình ảnh này.<br><span class="xg1">(Phần đầu của bức ảnh tiếp theo là phần cuối của ghi chú trước)</span>]]></item>
+				<item id="close2"><![CDATA[Đóng quả bóng này]]></item>
+				<item id="tip2"><![CDATA[Trước đó]]></item>
+				<item id="tip3"><![CDATA[Tiếp theo]]></item>
+				<item id="tip4"><![CDATA[Nhấn vào đây để xem hình ảnh gốc]]></item>
+				<item id="show_img"><![CDATA[Xem ảnh gốc]]></item>
+				<item id="show_all"><![CDATA[Xem toàn bộ]]></item>
+				<item id="tip_hide"><![CDATA[Ẩn chú thích]]></item>
+				<item id="show_tip"><![CDATA[Hiển thị chú thích]]></item>
+				<item id="mask"><![CDATA[Lớp viền ngoài]]></item>
+				<item id="loading"><![CDATA[Đang tải]]></item>
+				<item id="is_first_page"><![CDATA[Đã là trang đầu tiên!]]></item>
+				<item id="tip_play"><![CDATA[Bắt đầu chơi]]></item>
+				<item id="tip_pause"><![CDATA[Dừng phát lại]]></item>
+				<item id="loading1"><![CDATA[Đang tải hình ảnh ...]]></item>
+				<item id="loading2"><![CDATA[Đang tải hình ảnh lớn ...]]></item>
+				<item id="lastpage"><![CDATA[Đây là bức ảnh cuối cùng]]></item>
+			</item>
+			<item id="systemlang">
+				<item id="file">
+				</item>
+			</item>
+		</item>
+	</item>
+</root>
