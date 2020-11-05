@@ -5,7 +5,6 @@
 	<!--{if $_G['config']['output']['iecompatible']}--><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE{$_G['config']['output']['iecompatible']}" /><!--{/if}-->
 	<title><!--{if !empty($navtitle)}-->$navtitle <!--{/if}--><!--{if empty($nobbname)}-->- $_G['setting']['bbname']<!--{/if}--></title>
 	$_G['setting']['seohead']
-	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
 	<meta name="keywords" content="{if !empty($metakeywords)}{echo dhtmlspecialchars($metakeywords)}{/if}" />
 	<meta name="description" content="{if !empty($metadescription)}{echo dhtmlspecialchars($metadescription)} {/if}{if empty($nobbname)},$_G['setting']['bbname']{/if}" />
 	<meta name="generator" content="Discuz! $_G['setting']['version']" />
