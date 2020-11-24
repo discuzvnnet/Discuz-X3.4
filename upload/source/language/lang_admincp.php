@@ -6987,9 +6987,9 @@ $lang = array
 	'setting_manyou_base_ip_comment' => 'The default is empty. If your server has a DNS problem in resolving the MYOP/Search service IP, please fill out the MYOP IP Address. <a href="http://faq.comsenz.com/viewnews-400" target="_blank">View the MYOP IP</a>',
 	'setting_manyou_base_close_prompt' => 'Update the MYOP close tips',
 	'setting_manyou_base_close_prompt_comment' => 'If your site enabled the MYOP service, the MYOP platform will will automatically prompt the administrator about new information. If the feature is turn off, you will not get update notifications',
-	'setting_manyou_base_open_app_prompt' => 'Enable Applications Notice',
+	'setting_manyou_base_open_app_prompt' => 'Bật thông báo ứng dụng',
 	'setting_manyou_base_open_app_prompt_comment' => 'When the MYOP platform is announced a new application, a user browser will open a pop up window with tips or update notifications',
-	'setting_manyou_base_refresh' => 'Sync Application Platform Information',
+	'setting_manyou_base_refresh' => 'Đồng bộ hóa thông tin nền tảng ứng dụng',
 	'setting_manyou_base_refresh_comment' => 'If you change a navigation name Search settings, etc., you have to synchronize this information with the MYOP service',
 	'setting_manyou_base_showgift_comment' => 'If you enable the application gifts in the MYOP platform, the page will display "Recommended gifts"',
 	'setting_manyou_manage' => 'Quản lý ứng dụng MANYOU',
@@ -7058,7 +7058,7 @@ $lang = array
 # Bật chế độ RewriteEngine
 RewriteEngine On
 
-# Sửa đổi /discuz trong câu lệnh sau thành địa chỉ thư mục diễn đàn của bạn, nếu chương trình được đặt trong thư mục root, vui lòng sửa đổi /discuz thành /
+# Sửa đổi /discuz trong câu lệnh sau thành địa chỉ thư mục diễn đàn của bạn
 RewriteBase /discuz
 
 # Rewrite Không sửa đổi các quy tắc hệ thống
