@@ -1,12 +1,5 @@
 <?php
 
-/**
- *      [Discuz!] (C)2001-2099 Comsenz Inc.
- *      This is NOT a freeware, use is subject to license terms
- *
- *      $Id: lang_admincp.php 36362 2017-02-04 02:02:03Z nemohou $
- */
-
 if(!defined('IN_DISCUZ')) {
 	exit('Access Denied');
 }
@@ -5241,7 +5234,7 @@ $lang = array
 	'plugins_config_uninstallplugin' => 'Gỡ cài đặt plugin',
 	'plugins_edit' => 'Sửa plugin',
 	'plugins_edit_available' => ' (Plugin có sẵn)',
-	'plugins_edit_tips' => '<li><b>This feature is only for use by plug-in developers. if you only install or use the plug-in, do not modify the settings.</b></li><li>Before use this feature for plug-in developers, please be sure to carefully read the document "User manual" for design of plug-ins.</li><li>Warning: do not design or install the non-correct plug-ins, it may endanger the normal use of the site.</li><li>if the imported plug-in files placed in the source/plugin/plug-in-name/ directory, you can install the plug-in directly through the plug-in management center.</li>',
+	'plugins_edit_tips' => '<li><b>Tính năng này chỉ dành cho các nhà phát triển plugin. nếu bạn chỉ cài đặt hoặc sử dụng plugin, không sửa đổi cài đặt.</b></li><li>Trước khi sử dụng tính năng này cho các nhà phát triển plugin, hãy đảm bảo đọc kỹ tài liệu "Hướng dẫn sử dụng" để thiết kế plugin.</li><li>Cảnh báo: không thiết kế hoặc cài đặt các plugin không đúng, nó có thể gây nguy hiểm cho việc sử dụng bình thường của trang web.</li><li>Nếu tệp plugin đã nhập được đặt trong thư mục source/plugin/plug-in-name/, bạn có thể cài đặt trình cắm trực tiếp thông qua trung tâm quản lý plugin.</li>',
 	'plugins_edit_name' => 'Plug-in name',
 	'plugins_edit_name_comment' => 'The plug-in name can contain only latin letters, and must be shorter than 40 bytes',
 	'plugins_edit_version' => 'Plug-in version',
