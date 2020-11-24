@@ -6976,9 +6976,9 @@ $lang = array
 		<li>Nếu bạn đã thay đổi địa chỉ trang web, tên trang web và các thông tin khác, vui lòng chọn "Đồng bộ hóa thông tin chuyển vùng" để gửi.</li>
 		<li>Chức năng chuyển vùng được cung cấp bởi <a target="_blank" href="http://www.manyou.com/www/">nền tảng mở MYOP</a> dịch vụ Nền tảng mở Manyou(Manyou Open Platform / MYOP) do Comsenz cung cấp Công ty cung cấp một nền tảng mở cho các nhà phát triển ứng dụng. Trước khi bật dịch vụ chuyển vùng, hãy <a href="http://wiki.developer.manyou.com/wiki/index.php?title=MYOP%E7%BD%91%E7%AB%99%E6%9C%8D%E5%8A%A1%E5%8D%8F%E8%AE%AE&printable=yes" target="_blank">Vui lòng đọc thỏa thuận dịch vụ trang web MYOP trước</a></li>',
 	'setting_manyou_base' => 'Cài đặt cơ bản',
-	'setting_manyou_base_status' => 'Enable application platform',
-	'setting_manyou_base_status_comment' => 'Select whether to enable the applications. If you turn off applications, your users will not use any application based on this platform',
-	'setting_manyou_search_status' => 'Enable Application Search',
+	'setting_manyou_base_status' => 'Bật nền tảng ứng dụng',
+	'setting_manyou_base_status_comment' => 'Chọn có bật các ứng dụng hay không. Nếu bạn tắt ứng dụng, người dùng của bạn sẽ không sử dụng bất kỳ ứng dụng nào dựa trên nền tảng này',
+	'setting_manyou_search_status' => 'Bật tìm kiếm ứng dụng',
 	'setting_manyou_search_status_comment' => 'Application search feature is designed for Discuz! products tailored to the efficient, Full-text search service, without using the Web site MySQL resources',
 	'setting_manyou_search_invite' => 'Invitation code for application search feature',
 	'setting_manyou_search_invite_comment' => 'Currently in beta, Be opened to enter an invitation code for application search, <a href="http://www.discuz.net/thread-1669366-1-1.html" target="_blank">Click here to apply for an invitation code</a>',
