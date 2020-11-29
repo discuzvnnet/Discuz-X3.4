@@ -285,10 +285,10 @@ function refreshAvatarCanvasForDisplay() {
 
     ctx.fillStyle = "black";
     ctx.font = "bold 16px Arial";
-    ctx.fillText('上传成功!', dwidth - 160,155);
+    ctx.fillText('Tải lên thành công!', dwidth - 160,155);
     ctx.fillStyle = "grey";
     ctx.font = "bold 12px Arial";
-    ctx.fillText('以上是您头像的三种尺寸', dwidth - 200, 180);
+    ctx.fillText('Trên đây là ba kích thước ảnh đại diện của bạn', dwidth - 200, 180);
 }
 
 function rectAvatarDone(res) {
@@ -299,6 +299,6 @@ function rectAvatarDone(res) {
         jQuery('#avataradjuster').hide();
         jQuery('#avatarfileselector').hide();
     } else if (res == 'failure') {
-        alert('上传失败');
+        alert('Tải lên thất bại');
     }
 }

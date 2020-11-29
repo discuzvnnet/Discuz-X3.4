@@ -406,13 +406,13 @@ var page = {
 			selector += '<a id="select_a" style="margin:0 2px;padding:1px 0 0 0;border:0;display:inline-block;position:relative;width:100px;height:31px;line-height:27px;background:url('+STATICURL+'/image/mobile/images/pic_select.png) no-repeat;text-align:left;text-indent:20px;">';
 			selector += '<select id="dumppage" style="position:absolute;left:0;top:0;height:27px;opacity:0;width:100px;">';
 			for(var i=1; i<=lastpage; i++) {
-				selector += '<option value="'+i+'" '+ (i == curpage ? 'selected' : '') +'>第'+i+'页</option>';
+				selector += '<option value="'+i+'" '+ (i == curpage ? 'selected' : '') +'>trang '+i+'</option>';
 			}
 			selector += '</select>';
-			selector += '<span>第'+curpage+'页</span>';
+			selector += '<span>trang '+curpage+'</span>';
 		}
 
-		$('div.pg').removeClass('pg').addClass('page').html('<a href="'+ prevpagehref +'">上一页</a>'+ selector +'<a href="'+ nextpagehref +'">下一页</a>');
+		$('div.pg').removeClass('pg').addClass('page').html('<a href="'+ prevpagehref +'">Trang trước</a>'+ selector +'<a href="'+ nextpagehref +'">Trang tiếp</a>');
 		$('#dumppage').on('change', function() {
 			var href = (prevpage || nextpage);
 			window.location.href = href.replace(/page=\d+/, 'page=' + $(this).val());
@@ -515,7 +515,7 @@ var img = {
 		if(is_err_t) {
 			var parentnode = obj.parent();
 			parentnode.find('.loading').remove();
-			parentnode.append('<div class="error_text">点击重新加载</div>');
+			parentnode.append('<div class="error_text">Bấm để tải lại</div>');
 			parentnode.find('.error_text').one('click', function() {
 				obj.attr('load', 0).find('.error_text').remove();
 				parentnode.append('<div class="loading" style="background:url('+ IMGDIR +'/imageloading.gif) no-repeat center center;width:'+parentnode.width()+'px;height:'+parentnode.height()+'px"></div>');
@@ -567,9 +567,9 @@ var popup = {
 		if(typeof pop == 'string') {
 			$('#ntcmsg').remove();
 			if(type == 'alert') {
-				pop = '<div class="tip"><dt>'+ pop +'</dt><dd><input class="button2" type="button" value="确定" onclick="popup.close();"></dd></div>'
+				pop = '<div class="tip"><dt>'+ pop +'</dt><dd><input class="button2" type="button" value="Xác nhận" onclick="popup.close();"></dd></div>'
 			} else if(type == 'confirm') {
-				pop = '<div class="tip"><dt>'+ pop +'</dt><dd><input class="redirect button2" type="button" value="确定" href="'+ url +'"><a href="javascript:;" onclick="popup.close();">取消</a></dd></div>'
+				pop = '<div class="tip"><dt>'+ pop +'</dt><dd><input class="redirect button2" type="button" value="Xác nhận" href="'+ url +'"><a href="javascript:;" onclick="popup.close();">Hủy bỏ</a></dd></div>'
 			}
 			$('body').append('<div id="ntcmsg" style="display:none;">'+ pop +'</div>');
 			pop = $('#ntcmsg');
@@ -714,16 +714,16 @@ var geo = {
 		geo.errmsg = 'error';
 		switch(error.code) {
 			case error.TIMEOUT:
-				geo.errmsg = "获取位置超时，请重试";
+				geo.errmsg = "Đã hết thời gian nhận vị trí, vui lòng thử lại";
 				break;
 			case error.POSITION_UNAVAILABLE:
-				geo.errmsg = '无法检测到您的当前位置';
+				geo.errmsg = 'Không thể phát hiện vị trí hiện tại của bạn';
 			    break;
 		    case error.PERMISSION_DENIED:
-		        geo.errmsg = '请允许能够正常访问您的当前位置';
+		        geo.errmsg = 'Vui lòng cho phép truy cập bình thường vào vị trí hiện tại của bạn';
 		        break;
 		    case error.UNKNOWN_ERROR:
-		        geo.errmsg = '发生未知错误';
+		        geo.errmsg = 'Đã xảy ra lỗi không xác định';
 		        break;
 		}
 	},
@@ -733,7 +733,7 @@ var geo = {
 		geo.errmsg = '';
 		$.ajax({
 			type:'POST',
-			url:'http://maps.google.com/maps/api/geocode/json?latlng=' + geo.latitude + ',' + geo.longitude + '&language=zh-CN&sensor=true',
+			url:'https://maps.google.com/maps/api/geocode/json?latlng=' + geo.latitude + ',' + geo.longitude + '&language=vi-VN&sensor=true',
 			dataType:'json'
 		})
 		.success(function(s) {
@@ -775,7 +775,7 @@ var pullrefresh = {
 				contentobj = document.createElement('div');
 				contentobj = $(contentobj);
 				contentobj.css({'position':'absolute', 'height':'30px', 'top': '-30px', 'left':'50%'});
-				contentobj.html('<img src="'+ STATICURL + 'image/mobile/images/icon_arrow.gif" style="vertical-align:middle;margin-right:5px;-moz-transform:rotate(180deg);-webkit-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg);"><span id="refreshtxt">下拉可以刷新</span>');
+				contentobj.html('<img src="'+ STATICURL + 'image/mobile/images/icon_arrow.gif" style="vertical-align:middle;margin-right:5px;-moz-transform:rotate(180deg);-webkit-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg);"><span id="refreshtxt">Kéo xuống để làm mới</span>');
 				contentobj.find('img').css({'-webkit-transition':'all 0.5s ease-in-out'});
 				divobj.prepend(contentobj);
 				pos.topx = pos.curposx;
@@ -791,7 +791,7 @@ var pullrefresh = {
 					contentobj.css({'top': (-30 + pullheight/2) + 'px'});
 					if(reloadflag) {
 						contentobj.find('img').css({'-webkit-transform':'rotate(180deg)', '-moz-transform':'rotate(180deg)', '-o-transform':'rotate(180deg)', 'transform':'rotate(180deg)'});
-						contentobj.find('#refreshtxt').html('下拉可以刷新');
+						contentobj.find('#refreshtxt').html('Kéo xuống để làm mới');
 					}
 					reloadflag = false;
 				} else if(pullheight >= 150) {
@@ -799,7 +799,7 @@ var pullrefresh = {
 					contentobj.css({'top': (-30 + pullheight/2) + 'px'});
 					if(!reloadflag) {
 						contentobj.find('img').css({'-webkit-transform':'rotate(360deg)', '-moz-transform':'rotate(360deg)', '-o-transform':'rotate(360deg)', 'transform':'rotate(360deg)'});
-						contentobj.find('#refreshtxt').html('松开可以刷新');
+						contentobj.find('#refreshtxt').html('Phát hành để làm mới');
 					}
 					reloadflag = true;
 				}
@@ -809,7 +809,7 @@ var pullrefresh = {
 		.on('touchend', function(e) {
 			if(status == true) {
 				if(reloadflag) {
-					contentobj.html('<img src="'+ STATICURL + 'image/mobile/images/icon_load.gif" style="vertical-align:middle;margin-right:5px;">正在加载...');
+					contentobj.html('<img src="'+ STATICURL + 'image/mobile/images/icon_load.gif" style="vertical-align:middle;margin-right:5px;">Đang tải...');
 					contentobj.animate({'top': (-30 + 75) + 'px'}, 618, 'linear');
 					divobj.animate({'height': '75px'}, 618, 'linear', function() {
 						window.location.reload();
