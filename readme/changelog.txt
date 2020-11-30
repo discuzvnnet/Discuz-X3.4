@@ -1,11 +1,36 @@
 +======================================+
    Discuz! X3.4 Release 20180101
 +======================================+
-增加 HTML版头像上传机制
-优化 Media改成扩展形式
+ADD HTML5 version of the avatar upload mechanism
+IMPROVE Media into an expanded form
 
 +======================================+
    Discuz! X3.4 Release 20171001
 +======================================+
-优化 去除云平台
-增加 新触屏版（本地化微社区前端）
+IMPROVE Remove the cloud platform
+ADD New touch screen version (localized micro community front end)
+
++======================================+
+   Discuz! X3.3 Release 20170401
++======================================+
+COMPATIBLE PHP7
+IMPROVE SQL queries
+FIX Security issues
+IMPROVE Optimized the cache mechanism, it can be expanded freely
+ADD New cache drivers: APCu, Yac, File. File cache is set by default
+
++--------------------------------------+
+Old Versions
++--------------------------------------+
+Discuz! X1 Beta Release 20100501
+Discuz! X1 Release 20100518
+Discuz! X1 Release 20100601
+Discuz! X1 Release 20100613
+Discuz! X1 Release 20100723
+Discuz! X1.5RC Release 20100901
+Discuz! X1.5
+Discuz! X2
+Discuz! X2.5
+Discuz! X3
+Discuz! X3.1
+Discuz! X3.2
