@@ -13,7 +13,7 @@ if(!Variables.data[i]) { continue; }
 	<div class="topicCon">
 			<p class="personImgDate">
 				<span class="perImg db">
-                    <img src="<%= ucenterurl %>/avatar.php?uid=<%= Variables.data[i].authorid %>&size=small" onerror="javascript:this.src=DATA_DIR+'/images/personImg.jpg'" class="bImg" width="35" height="35" alt="头像">
+                    <img src="<%= ucenterurl %>/avatar.php?uid=<%= Variables.data[i].authorid %>&size=small" onerror="javascript:this.src=DATA_DIR+'/images/personImg.jpg'" class="bImg" width="35" height="35" alt="Hình đại diện">
 					<span class="timeT"><%= Variables.data[i].author %><i><%== stripCode(Variables.data[i].dateline) %></i></span>
 				</span>
 			 </p>
@@ -21,7 +21,7 @@ if(!Variables.data[i]) { continue; }
 				<p>
 				<%= Variables.data[i].subject %>
 				<% if(Variables.data[i].attachment == 2){ %>
-					<a class="photoInco db" href="javascript:;">图</a>
+					<a class="photoInco db" href="javascript:;">ký tự</a>
 				<% } %>
 				</p>
 				<span class="replyShare db fr">

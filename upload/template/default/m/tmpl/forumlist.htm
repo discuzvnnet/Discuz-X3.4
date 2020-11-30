@@ -24,8 +24,8 @@
                             <div onclick="openForum(<%= forum['fid']%>)">
                             <% if(forum["icon"]) { %><i class="fl db"><a href="javascript:;"><img src="<%= forum["icon"]%>" class="iImg" width="45" height="45" alt=""></a></i><% } %>
                             <h4 class="iText"><%== stripCode(forum["name"])%><span>(<%= forum["todayposts"]%>)</span></h4>
-                            <p class="subTitle st"><span>主题<em><%= forum["threads"]>10000 ? (forum["threads"]-forum["threads"]%1000)/10000+"万" : forum["threads"] %></em></span>
-                            <span>帖数<em><%= forum["posts"]>10000 ? (forum["posts"]-forum["posts"]%1000)/10000+"万" : forum["posts"] %></em></span><%if(subNum>0){%><span>子版块<em><%= subNum%></em></span><%}%></p>
+                            <p class="subTitle st"><span>Chủ đề<em><%= forum["threads"]>10000 ? (forum["threads"]-forum["threads"]%1000)/10000+"vạn" : forum["threads"] %></em></span>
+                            <span>Số bài viết<em><%= forum["posts"]>10000 ? (forum["posts"]-forum["posts"]%1000)/10000+"vạn" : forum["posts"] %></em></span><%if(subNum>0){%><span>Tiểu mục<em><%= subNum%></em></span><%}%></p>
                             </div>
                             <%if(subNum>0){%>
                             <a href="javascript:;" class="iBtn db"><span class="incoA"></span></a>
@@ -40,7 +40,7 @@
                         <li onclick="openForum(<%= subForum['fid']%>)">
 
                             <h4 class="iText"><%== stripCode(subForum["name"])%><span>(<%=subForum["todayposts"]%>)</span></h4>
-                            <p class="subTitle st"><span>主题<em><%=subForum["threads"]%></em></span><span>帖数<em><%=subForum["posts"]%></em></span></p>
+                            <p class="subTitle st"><span>Chủ đề<em><%=subForum["threads"]%></em></span><span>Số bài viết<em><%=subForum["posts"]%></em></span></p>
                         </li>
                         <%}%>
                     </ul>

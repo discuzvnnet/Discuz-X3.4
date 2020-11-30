@@ -11,14 +11,14 @@ for(i = 0; i < Variables.list.length; i ++){
 if(!Variables.list[i]) { continue; }
 %>
     <li touid="<%= Variables.list[i].touid %>">
-        <% if(Variables.list[i].isnew == '1') { %><span class="new">新</span><% } %>
+        <% if(Variables.list[i].isnew == '1') { %><span class="new">Mới</span><% } %>
         <% if(Variables.list[i].msgfromid && Variables.list[i].msgfromid != Variables.member_uid) { %>
         <i class="perImg">
-            <img src="<%= ucenterurl %>/avatar.php?uid=<%= Variables.list[i].msgfromid %>&size=small" onerror="javascript:this.src=DATA_DIR+'/images/personImg.jpg'" class="brBig" width="35" height="35" alt="头像">
+            <img src="<%= ucenterurl %>/avatar.php?uid=<%= Variables.list[i].msgfromid %>&size=small" onerror="javascript:this.src=DATA_DIR+'/images/personImg.jpg'" class="brBig" width="35" height="35" alt="Hình đại diện">
         </i>
         <% } else { %>
         <i class="perImg">
-            <img src="<%= ucenterurl %>/avatar.php?uid=<%= Variables.list[i].touid %>&size=small" onerror="javascript:this.src=DATA_DIR+'/images/personImg.jpg'" class="brBig" width="35" height="35" alt="头像">
+            <img src="<%= ucenterurl %>/avatar.php?uid=<%= Variables.list[i].touid %>&size=small" onerror="javascript:this.src=DATA_DIR+'/images/personImg.jpg'" class="brBig" width="35" height="35" alt="Hình đại diện">
         </i>
         <% } %>
         <p>
@@ -49,7 +49,7 @@ if(!Variables.list[i]) { continue; }
         <% if(Variables.list[i].msgfromid != Variables.member_uid) { %>
         <div class="messageCon">
             <i class="perImg">
-                <img src="<%= ucenterurl %>/avatar.php?uid=<%= Variables.list[i].msgfromid %>&size=small" onerror="javascript:this.src=DATA_DIR+'/images/personImg.jpg'" class="brBig" width="35" height="35" alt="头像">
+                <img src="<%= ucenterurl %>/avatar.php?uid=<%= Variables.list[i].msgfromid %>&size=small" onerror="javascript:this.src=DATA_DIR+'/images/personImg.jpg'" class="brBig" width="35" height="35" alt="Hình đại diện">
             </i>
             <div class="message"><i class="cf iconMessage"></i><%== stripCode(Variables.list[i].message) %></div>
         </div>
@@ -57,7 +57,7 @@ if(!Variables.list[i]) { continue; }
         <div class="messageCon my">
             <div class="message"><i class="cf iconMessage"></i><%== stripCode(Variables.list[i].message) %></div>
             <i class="perImg">
-                <img src="<%= ucenterurl %>/avatar.php?uid=<%= Variables.list[i].msgfromid %>&size=small" onerror="javascript:this.src=DATA_DIR+'/images/personImg.jpg'" class="brBig" width="35" height="35" alt="头像">
+                <img src="<%= ucenterurl %>/avatar.php?uid=<%= Variables.list[i].msgfromid %>&size=small" onerror="javascript:this.src=DATA_DIR+'/images/personImg.jpg'" class="brBig" width="35" height="35" alt="Hình đại diện">
             </i>
         </div>
         <% } %>
@@ -65,7 +65,7 @@ if(!Variables.list[i]) { continue; }
 </div>
 <% if(Variables.first) { %>
 <div class="inputWrap">
-    <input type="text" class="messageInput" /><a href="#">发送</a>
+    <input type="text" class="messageInput" /><a href="#">Gửi</a>
 </div>
 <% } %>
 </script>

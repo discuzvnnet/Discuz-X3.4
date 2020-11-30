@@ -1,11 +1,11 @@
 <script id="headerTpl" type="text/html">
 <div class="header">
 	<i class="topicLogo fl db"><img data-original="<%= header.logo %>" class="tImg lazy" width="78" height="78" alt="标志"></i>
-	<h3><%= header.name %><a href="javascript:;" class="follow attentionBtn">关注</a></h3>
+	<h3><%= header.name %><a href="javascript:;" class="follow attentionBtn">Chú ý</a></h3>
 	<p class="subTitle">
-        <span><em><%= Variables.transtotalposts %></em>话题</span>
+        <span><em><%= Variables.transtotalposts %></em>Đề tài</span>
         <% if(Variables.transtotalmembers){ %>
-        <span><em><%= Variables.transtotalmembers %></em>成员</span>
+        <span><em><%= Variables.transtotalmembers %></em>Thành viên</span>
         <% } %>
         <span><a href="javascript:;" class="mobilesign"></a></span>
     </p>
@@ -25,7 +25,7 @@
         if(Variables.forum_threadlist[i].displayorder != 1 || Variables.forum_threadlist[i].showactivity || count > 2) continue;
 		count++;
     %>
-        <li class="wot" tid="<%= Variables.forum_threadlist[i].tid %>"><span class="<% if(Variables.forum_threadlist[i].displayorder > 1) { %>noticeBtn<% } else { %>dynamicBtn<% } %> db">置顶</span><%= Variables.forum_threadlist[i].subject %></li>
+        <li class="wot" tid="<%= Variables.forum_threadlist[i].tid %>"><span class="<% if(Variables.forum_threadlist[i].displayorder > 1) { %>noticeBtn<% } else { %>dynamicBtn<% } %> db">Hàng đầu</span><%= Variables.forum_threadlist[i].subject %></li>
     <% } %>
 </ul>
 </script>
@@ -34,7 +34,7 @@
     <div class="customArea<% if(only) { %> only<% } %>" id="top_<%= thisi %>"<% if(thisi > 0) { %> style="display:none"<% } %>>
 	<div class="caCon">
         <% if(!noheader) { %>
-            <h3><i class="incoNotice commF"></i><%= name %><% if(more) { %><a href="<%= more %>" class="iMore">更多>></a><% } %></h3>
+            <h3><i class="incoNotice commF"></i><%= name %><% if(more) { %><a href="<%= more %>" class="iMore">Hơn>></a><% } %></h3>
         <% } %>
         <div class="customNotice">
         	<%== stripCode(html, 0, '#topcontainer', /\.customArea|\.caCon|\.caSide/ig) %>
@@ -54,7 +54,7 @@
         <div class="topicCon">
                 <p class="personImgDate">
                     <span class="perImg db">
-                        <img data-original="<% if(Variables.forum_threadlist[i].avatar) { %><%= Variables.forum_threadlist[i].avatar %><% } else { %><%= Variables.ucenterurl %>/avatar.php?uid=<%= Variables.forum_threadlist[i].authorid %>&size=small<% } %>" onerror="javascript:this.src=DATA_DIR+'/images/personImg.jpg'" class="bImg lazy" width="35" height="35" uid="<%= Variables.forum_threadlist[i].authorid %>" alt="头像">
+                        <img data-original="<% if(Variables.forum_threadlist[i].avatar) { %><%= Variables.forum_threadlist[i].avatar %><% } else { %><%= Variables.ucenterurl %>/avatar.php?uid=<%= Variables.forum_threadlist[i].authorid %>&size=small<% } %>" onerror="javascript:this.src=DATA_DIR+'/images/personImg.jpg'" class="bImg lazy" width="35" height="35" uid="<%= Variables.forum_threadlist[i].authorid %>" alt="Hình đại diện">
                         <% if(Variables.forum_threadlist[i].avatarHtml) { %><%== Variables.forum_threadlist[i].avatarHtml %><% } %>
                         <span class="timeT">
                             <%= Variables.forum_threadlist[i].author %>
@@ -72,16 +72,16 @@
                  </p>
                 <div class="detailCon">
                     <p>
-                    <% if(Variables.forum_threadlist[i].special == 3 && Variables.forum_threadlist[i].price > 0) { %><a href="javascript:;" class="showBtn br f11 c2 db">悬赏 <%= Variables.forum_threadlist[i].price %> <%= Variables.reward_unit %></a><% } %>
-                    <% if(Variables.forum_threadlist[i].special == 3 && Variables.forum_threadlist[i].price < 0) { %><a href="javascript:;" class="showBtn br f11 c2 db">已解决</a><% } %>
-                    <% if(Variables.forum_threadlist[i].special == 1) { %><a href="javascript:;" class="showBtn br f11 c2 db">投票</a><% } %>
-                    <% if(Variables.forum_threadlist[i].special == 4) { %><a href="javascript:;" class="showBtn br f11 c2 db">活动</a><% } %>
-                    <% if(Variables.forum_threadlist[i].replycredit > 0) { %><a href="javascript:;" class="showBtn br f11 c2 db">回帖奖励 <%= Variables.forum_threadlist[i].replycredit %></a><% } %>
-                    <% if(Variables.forum_threadlist[i].rushreply == 1) { %><a href="javascript:;" class="showBtn br f11 c2 db">抢楼</a><% } %>
+                    <% if(Variables.forum_threadlist[i].special == 3 && Variables.forum_threadlist[i].price > 0) { %><a href="javascript:;" class="showBtn br f11 c2 db">Phần thưởng <%= Variables.forum_threadlist[i].price %> <%= Variables.reward_unit %></a><% } %>
+                    <% if(Variables.forum_threadlist[i].special == 3 && Variables.forum_threadlist[i].price < 0) { %><a href="javascript:;" class="showBtn br f11 c2 db">Đã giải quyết</a><% } %>
+                    <% if(Variables.forum_threadlist[i].special == 1) { %><a href="javascript:;" class="showBtn br f11 c2 db">Biểu quyết</a><% } %>
+                    <% if(Variables.forum_threadlist[i].special == 4) { %><a href="javascript:;" class="showBtn br f11 c2 db">Hoạt động</a><% } %>
+                    <% if(Variables.forum_threadlist[i].replycredit > 0) { %><a href="javascript:;" class="showBtn br f11 c2 db">Giải thưởng ý kiến <%= Variables.forum_threadlist[i].replycredit %></a><% } %>
+                    <% if(Variables.forum_threadlist[i].rushreply == 1) { %><a href="javascript:;" class="showBtn br f11 c2 db">Trả lời nhanh</a><% } %>
                     <% if(Variables.forum_threadlist[i].typeid > 0 && Variables.threadtypes && Variables.threadtypes.types[Variables.forum_threadlist[i].typeid]){ %><a href="javascript:;" class="studioBtn db"><%== stripCode(Variables.threadtypes.types[Variables.forum_threadlist[i].typeid]) %></a><%}%>
                     <%= Variables.forum_threadlist[i].subject %>
                     <% if(Variables.forum_threadlist[i].attachment == 2){ %>
-                        <a class="photoInco db" href="javascript:;">图</a>
+                        <a class="photoInco db" href="javascript:;">ký tự</a>
                     <% } %>
                     </p>
                     <span class="replyShare db fr">
@@ -103,11 +103,11 @@
         <div class="topicList">
             <ul>
                 <% for(j = 0; j < Variables.forum_threadlist[i].reply.length; j ++) { %>
-                <li><img data-original="<% if(Variables.forum_threadlist[i].reply[j].avatar) { %><%= Variables.forum_threadlist[i].reply[j].avatar %><% } else { %><%= Variables.ucenterurl %>/avatar.php?uid=<%= Variables.forum_threadlist[i].reply[j].authorid %>&size=small<% } %>" onerror="javascript:this.src=DATA_DIR+'/images/personImg.jpg'" class="sImg db fl lazy" width="25" height="25" alt="头像"><a href="javascript:;" class="sW fl"><span><%= Variables.forum_threadlist[i].reply[j].author %>：</span><%= Variables.forum_threadlist[i].reply[j].message %></a></li>
+                <li><img data-original="<% if(Variables.forum_threadlist[i].reply[j].avatar) { %><%= Variables.forum_threadlist[i].reply[j].avatar %><% } else { %><%= Variables.ucenterurl %>/avatar.php?uid=<%= Variables.forum_threadlist[i].reply[j].authorid %>&size=small<% } %>" onerror="javascript:this.src=DATA_DIR+'/images/personImg.jpg'" class="sImg db fl lazy" width="25" height="25" alt="Hình đại diện"><a href="javascript:;" class="sW fl"><span><%= Variables.forum_threadlist[i].reply[j].author %>：</span><%= Variables.forum_threadlist[i].reply[j].message %></a></li>
                 <% } %>
             </ul>
             <% if(Variables.forum_threadlist[i].replies > 3) { %>
-                <p class="more"><a href="javascript:;" title="">查看全部<%= Variables.forum_threadlist[i].replies %>条回复</a></p>
+                <p class="more"><a href="javascript:;" title="">Xem tất cả<%= Variables.forum_threadlist[i].replies %>Trả lời</a></p>
             <% } %>
         </div>
         <% } %>
@@ -117,8 +117,8 @@
 <script id="bottomBar" type="text/html">
     <div class="bottomBarCon">
 	    <a href="javascript:;" class="backBtn"><i class="iconAnswer commF back db"></i></a>
-	    <a href="javascript:;" id="forumlist" class="blockSec db"><i class="incoSec"></i>版块</a>
-	    <a href="javascript:;" id="post_thread" class="publish ml db"><i class="iconPost f18 mr5 commF"></i>发帖</a>
+	    <a href="javascript:;" id="forumlist" class="blockSec db"><i class="incoSec"></i>Diễn đàn</a>
+	    <a href="javascript:;" id="post_thread" class="publish ml db"><i class="iconPost f18 mr5 commF"></i>Bài đăng</a>
         <a href="javascript:;" id="info_center" class="moreC db">
             <i class="circle">●</i><i class="circle">●</i><i class="circle">●</i>
             <i class="db numP" style="display:none;">0</i>
