@@ -19,7 +19,7 @@ var initSideBar = function (data, hookpre) {
 			TOOLS.openNewPage('?a=profile');
 		});
 	} else {
-		$('.s_prfile').html('登录');
+		$('.s_prfile').html('Đăng nhập');
 		$('.s_prfile').on('click', function (e) {
 			TOOLS.openNewPage('?a=login&referer=' + escape(window.location.search));
 		});

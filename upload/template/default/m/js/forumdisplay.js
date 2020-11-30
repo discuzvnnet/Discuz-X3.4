@@ -17,14 +17,14 @@ function drop() {
 			down_ing = false;
 			up_arrow.style['webkitTransitionDuration'] = '300ms';
 			up_arrow.style['webkitTransform'] = 'rotate(-180deg)';
-			up_text.innerHTML = "松开即可刷新";
+			up_text.innerHTML = "Phát hành để làm mới";
 			this.up_range = 0;
 		} else if (this.xy < 10 && down_ing == false) {
 			down_ing = true;
 			up_ing = false;
 			up_arrow.style['webkitTransitionDuration'] = '300ms';
 			up_arrow.style['webkitTransform'] = 'rotate(0deg)';
-			up_text.innerHTML = "下拉刷新";
+			up_text.innerHTML = "Kéo xuống để làm mới";
 			this.up_range = 60;
 		}
 	}
@@ -49,7 +49,7 @@ function drop() {
 			down_ing = false;
 			up_arrow.style['webkitTransitionDuration'] = '300ms';
 			up_arrow.style['webkitTransform'] = 'rotate(0deg)';
-			up_text.innerHTML = "松开加载更多";
+			up_text.innerHTML = "Phát hành để tải thêm";
 			loadb = true;
 
 		} else if (this.xy > -(this.coreWidth_cut_width + 20) && down_ing == false) {
@@ -57,7 +57,7 @@ function drop() {
 			up_ing = false;
 			up_arrow.style['webkitTransitionDuration'] = '300ms';
 			up_arrow.style['webkitTransform'] = 'rotate(-180deg)';
-			up_text.innerHTML = "上拉加载更多";
+			up_text.innerHTML = "Kéo lên để tải thêm";
 			loadb = false;
 		}
 	}
@@ -70,7 +70,7 @@ function drop() {
 			up_arrow.className += ' loading';
 			setTimeout(function () {
 				now = new Date();
-				var newli = '<li>' + now.getHours() + ' : ' + now.getMinutes() + ' : ' + now.getSeconds() + '&nbsp;&nbsp;加载的新内容</li><li>' + now.getHours() + ' : ' + now.getMinutes() + ' : ' + now.getSeconds() + '&nbsp;&nbsp;加载的新内容</li><li>' + now.getHours() + ' : ' + now.getMinutes() + ' : ' + now.getSeconds() + '&nbsp;&nbsp;加载的新内容</li>';
+				var newli = '<li>' + now.getHours() + ' : ' + now.getMinutes() + ' : ' + now.getSeconds() + '&nbsp;&nbsp;Nội dung mới được tải</li><li>' + now.getHours() + ' : ' + now.getMinutes() + ' : ' + now.getSeconds() + '&nbsp;&nbsp;Nội dung mới được tải</li><li>' + now.getHours() + ' : ' + now.getMinutes() + ' : ' + now.getSeconds() + '&nbsp;&nbsp;Nội dung mới được tải</li>';
 				bar_list_ul.innerHTML += newli;
 				up_arrow.style['webkitTransform'] = 'rotate(-180deg)';
 				up_arrow.className = 'up_down_arrow';

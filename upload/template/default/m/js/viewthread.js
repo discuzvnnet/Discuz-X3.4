@@ -44,7 +44,7 @@ var bindCommentEvent = function () {
 	$('a.replyByPid').unbind("click").click(function () {
 		var pId = $(this).attr("pid");
 		var first = $(this).attr("first");
-		var author = '楼主';
+		var author = 'Chủ bài viết';
 		if (!first) {
 			dom = $("#aut_" + $(this).attr("pid"));
 			author = dom[0].innerHTML;
@@ -157,7 +157,7 @@ var dataLoaded = function (json, isInit) {
 
 	if (SITE_INFO.blocktids && TOOLS.in_array(json.Variables.thread.tid, SITE_INFO.blocktids)) {
 		TOOLS.hideLoading();
-		TOOLS.dialog({content: "帖子已关闭", noMask: true, autoClose: 1});
+		TOOLS.dialog({content: "Bài đã đóng", noMask: true, autoClose: 1});
 		return;
 	}
 	if (isInit) {
@@ -342,7 +342,7 @@ var dataLoaded = function (json, isInit) {
 			TOOLS.openNewPage(returnurl);
 		});
 
-		threadTitle = json.Variables.thread.subject ? json.Variables.thread.subject : '快来看看这个话题';
+		threadTitle = json.Variables.thread.subject ? json.Variables.thread.subject : 'Hãy xem chủ đề này';
 		threadContent = postItem.message;
 
 		var imgUrl = SITE_INFO.siteLogo;
@@ -459,7 +459,7 @@ var dataLoaded = function (json, isInit) {
 						}
 						digSpan.html(digNum + 1);
 					} else {
-						TOOLS.showTips('您已经赞过', 1);
+						TOOLS.showTips('Bạn đã thích', 1);
 					}
 				},
 					function (error) {
@@ -481,7 +481,7 @@ var dataLoaded = function (json, isInit) {
 					$('.incoA.db').removeClass('iBtnOn1');
 				}
 			});
-			$('.replyBtn').html('<i class="incoR"></i>参与');
+			$('.replyBtn').html('<i class="incoR"></i>Tham dự');
 			$('.replyBtn').addClass('joinBtn');
 			if (json.Variables.special_activity.closed && json.Variables.special_activity.closed != '0') {
 				$('a.replyByPid').hide();
@@ -635,7 +635,7 @@ var viewThreadInit = function () {
 	var index = TOOLS.getQuery('page');
 
 	if (tId == undefined || tId <= 0) {
-		TOOLS.showTips('不正确的主题ID', true, '');
+		TOOLS.showTips('ID chủ đề không chính xác', true, '');
 		return;
 	}
 
@@ -694,14 +694,14 @@ var viewThreadGetMore = function () {
 
 var recommend = function (obj) {
 	if (member_uid == "0") {
-		TOOLS.showTips('您尚未登录，没有权限点赞', true);
+		TOOLS.showTips('Bạn chưa đăng nhập, không có quyền thích', true);
 		TOOLS.openLoginPage(location.href, 1000);
 		return;
 	}
 	var btn = $(obj);
 	var status = btn.find('i').attr('class');
 	if (status == 'praise') {
-		TOOLS.showTips('您已经赞过该帖', true);
+		TOOLS.showTips('Bạn đã thích bài đăng này', true);
 		return;
 	}
 

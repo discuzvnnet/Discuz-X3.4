@@ -20,7 +20,7 @@ var dataLoaded = function (np, checkWarp) {
 			renderPage(json);
 			var no_data = !json.Variables.messageList || json.Variables.messageList.length == 0;
 			if (checkWarp && no_data) {
-				TOOLS.showError('.warp', "没有消息", null);
+				TOOLS.showError('.warp', "Không có tin tức", null);
 				return;
 			}
 			nextStart = json.Variables.nextStart;
@@ -34,7 +34,7 @@ var dataLoaded = function (np, checkWarp) {
 			}
 		},
 		function (error) {
-			TOOLS.showError('.warp', "网络不稳定,单击页面重新加载~", function () {
+			TOOLS.showError('.warp', "Mạng không ổn định, bấm vào trang để tải lại ~", function () {
 				location.reload();
 			});
 			TOOLS.hideLoading();

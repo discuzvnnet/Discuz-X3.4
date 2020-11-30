@@ -52,7 +52,7 @@ var topicAdmin = {
 					TOOLS.dpost(url, post,
 						function (re) {
 							$(obj).hide();
-							$('.topicadminMsg[tid=' + topicAdmin.opts.tid + '][pid=' + topicAdmin.opts.pid + ']').html(!topicAdmin.opts.ban ? '已屏蔽' : '');
+							$('.topicadminMsg[tid=' + topicAdmin.opts.tid + '][pid=' + topicAdmin.opts.pid + ']').html(!topicAdmin.opts.ban ? 'Bị chặn' : '');
 							TOOLS.showTips(re.Message.messagestr, true);
 							TOOLS.setcookie('refreshindex', '1', 86400);
 						},
@@ -103,9 +103,9 @@ var topicAdmin = {
 						function (re) {
 							$(obj).hide();
 							if (topicAdmin.opts.isfirst) {
-								$('.topicadminMsg[tid=' + topicAdmin.opts.tid + ']').html('已删除');
+								$('.topicadminMsg[tid=' + topicAdmin.opts.tid + ']').html('Đã xóa');
 							} else {
-								$('.topicadminMsg[tid=' + topicAdmin.opts.tid + '][pid=' + topicAdmin.opts.pid + ']').html('已删除');
+								$('.topicadminMsg[tid=' + topicAdmin.opts.tid + '][pid=' + topicAdmin.opts.pid + ']').html('Đã xóa');
 							}
 							TOOLS.showTips(re.Message.messagestr, true);
 							TOOLS.setcookie('refreshindex', '1', 86400);

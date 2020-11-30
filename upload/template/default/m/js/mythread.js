@@ -3,7 +3,7 @@ var index = {
 	dropDown: false,
 	dropUp: false,
 	ucenterurl: '',
-	titleNames: {'thread': '我的话题', 'reply': '我的回复'},
+	titleNames: {'thread': 'Chủ đề của tôi', 'reply': 'Phản hồi của tôi'},
 	backToTop: function (offset) {
 		if (document.body.scrollTop <= 0 || offset.y > 2) {
 			$('#backToTopBtn').hide();

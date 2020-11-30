@@ -4,7 +4,7 @@ var index = {
 	dropUp: false,
 	ucenterurl: '',
 	formhash: '',
-	titleName: '我的私信',
+	titleName: 'Tin nhắn riêng tư của tôi',
 	backToTop: function (offset) {
 		if (document.body.scrollTop <= 0 || offset.y > 2) {
 			$('#backToTopBtn').hide();
@@ -148,7 +148,7 @@ var index = {
 				index.loadPage(url, index.renderMyPage);
 			}, 500);
 		} else {
-			TOOLS.showTips('无法发送, 请稍后重新发送', true);
+			TOOLS.showTips('Không thể gửi, vui lòng gửi lại sau', true);
 		}
 	},
 	loadPage: function (url, callBack) {

@@ -128,7 +128,7 @@ var TOOLS = {
 			return false;
 		}
 
-		var title = opts.title || '提示信息';
+		var title = opts.title || 'Thông tin nhanh chóng';
 		var content = opts.content || '';
 
 		var btnOk = opts.okValue || false;
@@ -301,7 +301,7 @@ var TOOLS = {
 	showLoading: function (display, waiting, autoClose) {
 		var display = display || 'block';
 		var autoClose = autoClose || false;
-		waiting = waiting || '正在加载...';
+		waiting = waiting || 'Đang tải...';
 		if (display == 'block') {
 			TOOLS.dialog({id: 'loading', content: waiting, noMask: true, autoClose: autoClose});
 		} else {
@@ -400,7 +400,7 @@ var TOOLS = {
 		} else if (power > 5) {
 			power = 4;
 		}
-		var unit = ["", "十", "百", "千", "万"];
+		var unit = ["", "chục", "trăm", "nghìn", "vạn"];
 		var v = count / Math.pow(10, power);
 		if (fixed == undefined) {
 			fixed = 0;
@@ -551,11 +551,11 @@ var TOOLS = {
 				var sys_error = data.error || '';
 				if (sys_error !== '') {
 					if (typeof errorfunc === 'function') {
-						var siteName = typeof SITE_INFO.siteName !== 'undefined' ? SITE_INFO.siteName : '微社区';
+						var siteName = typeof SITE_INFO.siteName !== 'undefined' ? SITE_INFO.siteName : 'Cộng đồng vi mô';
 						if (sys_error === 'mobile_is_closed') {
-							TOOLS.showError('.warp', '您请求的' + siteName + '无法访问<br /><br />该社区未启用手机版');
+							TOOLS.showError('.warp', 'Không thể truy cập ' + siteName + ' mà bạn yêu cầu<br /><br />Phiên bản di động không được kích hoạt cho cộng đồng này');
 						} else {
-							TOOLS.showError('.warp', '您请求的' + siteName + '无法访问<br /><br />接口错误(ERR01)');
+							TOOLS.showError('.warp', 'Không thể truy cập ' + siteName + ' mà bạn yêu cầu<br /><br />Lỗi giao diện(ERR01)');
 						}
 					} else {
 						return;
@@ -589,8 +589,8 @@ var TOOLS = {
 					}
 				}
 				if (typeof errorfunc === 'function') {
-					var siteName = typeof SITE_INFO.siteName !== 'undefined' ? SITE_INFO.siteName : '微社区';
-					TOOLS.showError('.warp', '您请求的' + siteName + '无法访问<br /><br />接口错误(ERR02)');
+					var siteName = typeof SITE_INFO.siteName !== 'undefined' ? SITE_INFO.siteName : 'Cộng đồng vi mô';
+					TOOLS.showError('.warp', 'Không thể truy cập ' + siteName + ' mà bạn yêu cầu<br /><br />Lỗi giao diện(ERR02)');
 					TOOLS.hideLoading();
 				}
 			}
@@ -647,8 +647,8 @@ var TOOLS = {
 					try {
 						re = jQuery.parseJSON(re);
 					} catch (e) {
-						var siteName = typeof SITE_INFO.siteName !== 'undefined' ? SITE_INFO.siteName : '微社区';
-						TOOLS.showError('.warp', '您请求的' + siteName + '无法访问<br /><br />接口错误(ERR03)');
+						var siteName = typeof SITE_INFO.siteName !== 'undefined' ? SITE_INFO.siteName : 'Cộng đồng vi mô';
+						TOOLS.showError('.warp', 'Không thể truy cập ' + siteName + ' mà bạn yêu cầu<br /><br />Lỗi giao diện(ERR03)');
 						TOOLS.hideLoading();
 						return;
 					}
@@ -679,8 +679,8 @@ var TOOLS = {
 							try {
 								re = jQuery.parseJSON(re);
 							} catch (e) {
-								var siteName = typeof SITE_INFO.siteName !== 'undefined' ? SITE_INFO.siteName : '微社区';
-								TOOLS.showError('.warp', '您请求的' + siteName + '无法访问<br /><br />接口错误(ERR04)');
+								var siteName = typeof SITE_INFO.siteName !== 'undefined' ? SITE_INFO.siteName : 'Cộng đồng vi mô';
+								TOOLS.showError('.warp', 'Không thể truy cập ' + siteName + ' mà bạn yêu cầu<br /><br />Lỗi giao diện(ERR04)');
 								TOOLS.hideLoading();
 								return;
 							}
@@ -737,8 +737,8 @@ var TOOLS = {
 						if (matches != null) {
 							TOOLS.checkInfo.load();
 						} else {
-							var siteName = typeof SITE_INFO.siteName !== 'undefined' ? SITE_INFO.siteName : '微社区';
-							TOOLS.showError('.warp', '您请求的' + siteName + '无法访问<br /><br />接口错误(ERR05)');
+							var siteName = typeof SITE_INFO.siteName !== 'undefined' ? SITE_INFO.siteName : 'Cộng đồng vi mô';
+							TOOLS.showError('.warp', 'Không thể truy cập ' + siteName + ' mà bạn yêu cầu<br /><br />Lỗi giao diện(ERR05)');
 							TOOLS.hideLoading();
 						}
 					}
@@ -915,11 +915,11 @@ var TOOLS = {
 				var opts = {
 					'id': param['id'],
 					'content': TOOLS.stripCode(param['content']),
-					'okValue': '确定',
+					'okValue': 'Xác nhận',
 					'ok': param['ok'] ? function () {
 						TOOLS.customFuncs.run(event, param['ok']);
 					} : null,
-					'cancelValue': '取消',
+					'cancelValue': 'Hủy bỏ',
 					'cancel': param['cancel'] ? function () {
 						TOOLS.customFuncs.run(event, param['cancel']);
 					} : null,
@@ -1010,7 +1010,7 @@ var TOOLS = {
 		var msg = '';
 		if (jQuery.os.ios) {
 			if (jQuery.os.version.toString() < '6.0') {
-				msg = '手机系统不支持图片上传，请升级到iOS6以上';
+				msg = 'Hệ thống điện thoại di động không hỗ trợ tải lên hình ảnh, vui lòng nâng cấp lên iOS6 trở lên';
 			}
 		}
 		if (msg) {

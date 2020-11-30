@@ -158,13 +158,13 @@ var dataLoaded = function (json, isInit) {
 			}
 		});
 
-		threadTitle = json.Variables.thread.subject ? json.Variables.thread.subject : '快来看看这个晒图';
-		threadContent = '我参加了#' + SITE_INFO.siteName + '#举办的晒图活动，快来帮我点赞吧';
+		threadTitle = json.Variables.thread.subject ? json.Variables.thread.subject : 'Hãy xem bức tranh này';
+		threadContent = 'Tôi đã tham gia#' + SITE_INFO.siteName + '# Hoạt động ảnh được tổ chức, hãy đến và like nó cho tôi';
 
 		if (postItem.authorid == member_uid) {
-			$('.tipBor').html('希望更多人喜欢你的照片，点击右上角图标分享<span class="arrLeft"></span>');
+			$('.tipBor').html('Hy vọng sẽ có nhiều người thích ảnh của bạn, bấm vào biểu tượng ở góc trên bên phải để chia sẻ<span class="arrLeft"></span>');
 		} else {
-			$('.tipBor').html('如果喜欢我的照片，请点击右上角图标分享<span class="arrLeft"></span>');
+			$('.tipBor').html('Nếu bạn thích ảnh của tôi, vui lòng nhấp vào biểu tượng ở góc trên bên phải để chia sẻ<span class="arrLeft"></span>');
 		}
 
 		var imgUrl = SITE_INFO.siteLogo;
@@ -241,7 +241,7 @@ var viewThreadInit = function () {
 	var index = TOOLS.getQuery('page');
 
 	if (tId == undefined || tId <= 0) {
-		TOOLS.showTips('不正确的主题ID', true, '');
+		TOOLS.showTips('ID chủ đề không chính xác', true, '');
 		return;
 	}
 	if (OS.length == 0) {
@@ -309,7 +309,7 @@ var recommend = function (obj) {
 	var btn = $(obj);
 	var status = btn.find('i').attr('class');
 	if (status == 'praise') {
-		TOOLS.showTips('您已经赞过该帖', true);
+		TOOLS.showTips('Bạn đã thích bài đăng này', true);
 		return;
 	}
 

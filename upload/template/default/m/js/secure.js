@@ -80,7 +80,7 @@ var secure = {
 								jQuery('#secqaa').html(secure.secqaa);
 							},
 							"error": function () {
-								TOOLS.showTips('刷新失败', true);
+								TOOLS.showTips('Làm mới không thành công', true);
 							}
 						};
 						secure.getSecure(optreturn);

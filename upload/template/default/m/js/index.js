@@ -104,7 +104,7 @@ var index = {
 		index.realFirstLoad = (index.realFirstLoad - 1 <= 0) ? 0 : 1;
 
 		if (SITE_INFO.closed) {
-			TOOLS.dialog({content: "站点已关闭", noMask: true, autoClose: 1});
+			TOOLS.dialog({content: "Trang web đã đóng cửa", noMask: true, autoClose: 1});
 			return;
 		}
 
@@ -121,7 +121,7 @@ var index = {
 		}
 
 		if (data.Variables.forum.password == 1 && !data.Variables.forum.threadcount) {
-			TOOLS.dialog({content: "当前版块为加密版块，无法通过微社区访问", noMask: true});
+			TOOLS.dialog({content: "Trang web này đã được đặt mật khẩu, phần này sẽ không thể truy cập được", noMask: true});
 			return;
 		}
 
@@ -171,7 +171,7 @@ var index = {
 				if (data.Variables.forum_threadlist.length && 0 < data.Variables.topTopicCount && data.Variables.topTopicCount < 20) {
 					var top_bar = [
 						{
-							'name': '置顶帖',
+							'name': 'Lưu ý',
 							'html': template.render('TopList', data),
 							'more': '?a=toplist&fid=' + index.fid
 						}

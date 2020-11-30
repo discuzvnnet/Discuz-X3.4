@@ -48,7 +48,7 @@ var specialThread = {
 					}
 				} else if (joinfield[ufield.userfield[i]].formtype != 'text' && joinfield[ufield.userfield[i]].formtype != 'textarea') {
 					if (ufield.userfield[i] == 'gender') {
-						joinfield[ufield.userfield[i]].choices = {1: '男', 2: '女'};
+						joinfield[ufield.userfield[i]].choices = {1: 'Nam', 2: 'Nữ'};
 					} else {
 						joinfield[ufield.userfield[i]].formtype = 'text';
 					}
@@ -61,12 +61,12 @@ var specialThread = {
 		for (var i in ufield.extfield) {
 			joinHtml += template.render('joinfield', {fieldid: ufield.extfield[i], title: ufield.extfield[i], formtype: "text", require: false, value: extfield ? extfield[ufield.extfield[i]] : ''});
 		}
-		joinHtml += template.render('joinfield', {fieldid: 'message', title: '留言', formtype: "textarea", require: false, value: basefield.message});
+		joinHtml += template.render('joinfield', {fieldid: 'message', title: 'Để lại lời nhắn', formtype: "textarea", require: false, value: basefield.message});
 		specialThread.activity.joinHtml = joinHtml;
 		joinHtml = template.render('joinform', specialThread.activity);
 		$('#joinbox').html(joinHtml);
 		cancelHtml = '';
-		cancelHtml += template.render('joinfield', {fieldid: 'message', title: '留言', formtype: "textarea", require: false});
+		cancelHtml += template.render('joinfield', {fieldid: 'message', title: 'Để lại lời nhắn', formtype: "textarea", require: false});
 		specialThread.activity.cancelHtml = cancelHtml;
 		cancelHtml = template.render('cancelform', specialThread.activity);
 		$('#cancelbox').html(cancelHtml);
@@ -118,7 +118,7 @@ var specialThread = {
 			var postUrl = API_URL + 'module=forummisc&version=4&t=output&action=activityapplies&fid=' + specialThread.fid + '&tid=' + specialThread.tid + '&pid=' + specialThread.pid + '&activitysubmit=yes';
 			TOOLS.dpost(postUrl, $('#actjoinform').serialize(),
 				function (re) {
-					TOOLS.showTips("报名成功", true);
+					TOOLS.showTips("Đăng ký thành công", true);
 					setTimeout(function () {
 						location.reload();
 					}, 300);
@@ -137,7 +137,7 @@ var specialThread = {
 			TOOLS.dpost(postUrl, $('#actcancelform').serialize(),
 				null,
 				function (re) {
-					TOOLS.showTips("已取消报名", true);
+					TOOLS.showTips("Đăng ký bị hủy", true);
 					setTimeout(function () {
 						location.reload();
 					}, 300);

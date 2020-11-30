@@ -3,7 +3,7 @@ var index = {
 	dropDown: false,
 	dropUp: false,
 	ucenterurl: '',
-	titleName: '我的提醒',
+	titleName: 'Lời nhắc của tôi',
 	discuzversion: '',
 	backToTop: function (offset) {
 		if (document.body.scrollTop <= 0 || offset.y > 2) {

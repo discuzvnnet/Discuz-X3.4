@@ -15,7 +15,7 @@ var login = {
 			login.formhash = data.Variables.formhash;
 			login.login = data.Variables.member_uid;
 			if(login.login > 0){
-				TOOLS.showTips('登录成功', true);
+				TOOLS.showTips('Đăng nhập thành công', true);
 				setTimeout(function(){
 					if (TOOLS.getQuery('referer')) {
 						TOOLS.openNewPage(unescape(TOOLS.getQuery('referer')));
@@ -47,9 +47,9 @@ var login = {
 		if (TOOLS.getQuery('loginErr')) {
 			var loginErr = TOOLS.getQuery('loginErr');
 			if (loginErr == 1001) {
-				TOOLS.showTips('此QQ帐号尚未绑定，无法登录', true);
+				TOOLS.showTips('Tài khoản QQ này chưa bị ràng buộc và không thể đăng nhập', true);
 			}else if (loginErr == 2001) {
-				TOOLS.showTips('此微信尚未绑定过账号<br />请用您已注册的账号登录完成绑定', true);
+				TOOLS.showTips('Tài khoản WeChat này không bị ràng buộc<br />Vui lòng đăng nhập bằng tài khoản đã đăng ký của bạn để hoàn thành việc ràng buộc', true);
 			}
 		}
 
@@ -89,7 +89,7 @@ var login = {
 		var url = API_URL + "version=4&module=login";
 		TOOLS.dget(url, null, function (data) {
 			TOOLS.dpost(login.loginUrl, login.postParams + login.extraPost + login.extraAuth, login.callbackFunc.success, login.callbackFunc.error, 'application/x-www-form-urlencoded');
-			TOOLS.showLoading(null, '正在登录');
+			TOOLS.showLoading(null, 'Đăng nhập');
 		}, null, 'text/plain', false, false);
 	},
 	logoutRequest: function (call) {
@@ -97,7 +97,7 @@ var login = {
 	},
 	loginSuccess: function () {
 		TOOLS.hideLoading();
-		TOOLS.showTips('登录成功', true);
+		TOOLS.showTips('Đăng nhập thành công', true);
 		if ($('#referer').val() != '') {
 			TOOLS.openNewPage($('#referer').val());
 		} else {
