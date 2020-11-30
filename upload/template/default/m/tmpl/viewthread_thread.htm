@@ -1,6 +1,6 @@
 <script id="tmpl_topic_item" type="text/html">
     <i class="topicLogo fl db">
-        <img data-original="<% if(post.avatar) { %><%= post.avatar %><% } else { %><%= ucenterurl %>/avatar.php?uid=<%= post.authorid %>&size=small<% } %>" onerror="javascript:this.src=DATA_DIR+'/images/personImg.jpg'" class="tImg lazy" width="35" height="35" uid="<%= post.authorid %>" alt="头像">
+        <img data-original="<% if(post.avatar) { %><%= post.avatar %><% } else { %><%= ucenterurl %>/avatar.php?uid=<%= post.authorid %>&size=small<% } %>" onerror="javascript:this.src=DATA_DIR+'/images/personImg.jpg'" class="tImg lazy" width="35" height="35" uid="<%= post.authorid %>" alt="Hình đại diện">
         <% if(post.avatarHtml) { %><%== post.avatarHtml %><% } %>
     </i>
     <h3><%= post.author %>
@@ -16,7 +16,7 @@
         </span>
     </p>
     <span class="perPop" tid="<%= thread.tid %>" style="display:none"></span>
-    <a class="eidtInfo landlord db" href="javascript:;"><i class="incoV"></i>楼主</a>
+    <a class="eidtInfo landlord db" href="javascript:;"><i class="incoV"></i>Chủ bài viết</a>
     <% include(thread.firstBody) %>
 </script>
 
@@ -27,13 +27,13 @@
             <% if(thread.replycredit > 0 || thread.rushreply == 1) { %>
                 <span class="db lh1">
                 <% if(thread.replycredit > 0) { %>
-                    <span class="f11 fn"><a href="javascript:;" class="showBtn br f11 c2 db">回帖奖励 <%= thread.replycredit %></a></span>
+                    <span class="f11 fn"><a href="javascript:;" class="showBtn br f11 c2 db">Trả lời phần thưởng <%= thread.replycredit %></a></span>
                 <% } %>
                 <% if(thread.rushreply == 1) { %>
                     <span class="f11 fn c7">
                         <a href="javascript:;" class="showBtn br f11 c2 db">抢楼帖</a>
                         <% if(thread.rushresult['rewardfloor']) { %>
-                            奖励楼层 <%= thread.rushresult['rewardfloor'] %>
+                            Tầng thưởng <%= thread.rushresult['rewardfloor'] %>
                         <% } %>
                     </span>
                 <% } %>
@@ -58,19 +58,19 @@
                 <div class="topicList">
                     <ul>
                         <% for(i = 0; i< comments.length; i++) { %>
-                            <li><a href="javascript:;" class="f13 c3"><span class="c7"><%==comments[i].author%><% if(comments[i].authorid == post.authorid) { %><i class="cardBtn br fn db c2">楼主</i><% } %>：</span><%==stripCode(comments[i].comment) %></a>
+                            <li><a href="javascript:;" class="f13 c3"><span class="c7"><%==comments[i].author%><% if(comments[i].authorid == post.authorid) { %><i class="cardBtn br fn db c2">Chủ bài viết</i><% } %>：</span><%==stripCode(comments[i].comment) %></a>
                         </li>
                         <% } %>
                     </ul>
                      <% if(commentCount > 5) { %>
-                        <a href="javascript:;" class="db f12 moreInReply viewcommentBtn" tid="<%= post.tid %>" pid="<%= post.pid %>">更多</a>
+                        <a href="javascript:;" class="db f12 moreInReply viewcommentBtn" tid="<%= post.tid %>" pid="<%= post.pid %>">Hơn</a>
                     <% } %>
                 </div>
             </div>
        </div>
        <% } %>
         <span class="replyShare db fr">
-            <a class="topicadminMsg" tid="<%= post.tid %>" pid="<%= post.pid %>"><% if(post.status & 1) {%>已屏蔽<%}%></a>
+            <a class="topicadminMsg" tid="<%= post.tid %>" pid="<%= post.pid %>"><% if(post.status & 1) {%>Bị chặn<%}%></a>
             <% if (member_uid != "0"){%>
                 <a href="javascript:;" id="recommendBtn">
                     <i class=<%=thread.recommend == 1 ? "praise" : "noPraise"%>></i>

@@ -4,8 +4,8 @@
         <div class="voteTit">
             <h4><%== stripCode(thread.subject) %></h4>
             <div class="titInfo">
-                <% if(bestpost.length == 0) { %><i class="underway">未解决</i><% } else { %><i class="ended">已解决</i><% } %>
-                <span>悬赏<%=rewardprice%></span>
+                <% if(bestpost.length == 0) { %><i class="underway">Chưa giải quyết</i><% } else { %><i class="ended">Đã giải quyết</i><% } %>
+                <span>Đưa ra phần thưởng<%=rewardprice%></span>
             </div>
         </div>
         <div id="msg_<%= post.pid %>">
@@ -22,7 +22,7 @@
             <% if(bestpost.length != 0) { %>
                 <div class="voteTit">
                     <div class="titInfo">
-                        <i class="underway">最佳答案</i>
+                        <i class="underway">Câu trả lời tốt nhất</i>
                     </div>
                     <%= bestpost.author %>: <%= bestpost.message %>
                 </div>
@@ -34,18 +34,18 @@
                     <div class="topicList">
                         <ul>
                         <% for(i = 0; i< comments.length; i++) { %>
-                            <li><a href="javascript:;" class="f13 c3"><span class="c7"><%==comments[i].author%><% if(comments[i].authorid == post.authorid) { %><i class="cardBtn br fn db c2">楼主</i><% } %>：</span><%== stripCode(comments[i].comment) %></a></li>
+                            <li><a href="javascript:;" class="f13 c3"><span class="c7"><%==comments[i].author%><% if(comments[i].authorid == post.authorid) { %><i class="cardBtn br fn db c2">Chủ bài viết</i><% } %>：</span><%== stripCode(comments[i].comment) %></a></li>
                         <% } %>
                         </ul>
                         <% if(commentCount > 5) { %>
-                        <a href="javascript:;" class="db f12 moreInReply viewcommentBtn" tid="<%= post.tid %>" pid="<%= post.pid %>">更多</a>
+                        <a href="javascript:;" class="db f12 moreInReply viewcommentBtn" tid="<%= post.tid %>" pid="<%= post.pid %>">Hơn</a>
                         <% } %>
                     </div>
                 </div>
            </div>
         <% } %>
         <span class="replyShare db fr">
-            <a class="topicadminMsg" tid="<%= post.tid %>" pid="<%= post.pid %>"><% if(post.status & 1) {%>已屏蔽<%}%></a>
+            <a class="topicadminMsg" tid="<%= post.tid %>" pid="<%= post.pid %>"><% if(post.status & 1) {%>Bị chặn<%}%></a>
             <% if (member_uid != "0"){%>
                 <a href="javascript:;" id="recommendBtn">
                     <i class=<%=thread.recommend == 1 ? "praise" : "noPraise"%>></i>

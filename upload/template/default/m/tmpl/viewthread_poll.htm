@@ -4,7 +4,7 @@
         <div class="voteTit">
             <h4><%== stripCode(thread.subject) %></h4>
             <div class="titInfo">
-                <% if(!special_poll.isEnd) { %><i class="underway">进行中</i><% } else { %><i class="ended">已结束</i><% } %><% if(special_poll.expirationsFormat) { %><span>截至时间：<%=special_poll.expirationsFormat%></span>|<% } %><span>参与人数 <%=special_poll.voterscount%></span>
+                <% if(!special_poll.isEnd) { %><i class="underway">Chế biến</i><% } else { %><i class="ended">kết thúc</i><% } %><% if(special_poll.expirationsFormat) { %><span>Hạn chót:<%=special_poll.expirationsFormat%></span>|<% } %><span>Số lượng người tham gia <%=special_poll.voterscount%></span>
             </div>
         </div>
         <div id="msg_<%= post.pid %>">
@@ -25,17 +25,17 @@
             </form>
             <div class="voteMes">
                 <% if(special_poll.maxchoices == 1) { %>
-                    只可单选<i>1</i>项
+                    Chỉ lựa chọn duy nhất<i>1</i>mục
                 <% } else {%>
-                    最多选<i><%= special_poll.maxchoices %></i>项
+                    Được chọn nhiều nhất<i><%= special_poll.maxchoices %></i>mục
                 <% } %>
             </div>
         </div>
         <div class="voteBtWrap">
             <% if(special_poll.allowvote) { %>
-            <a href="javascript:;" class="btnVote">投票</a>
+            <a href="javascript:;" class="btnVote">Biểu quyết</a>
             <% } else { %>
-            <span class="btnVote disabled">投票</span>
+            <span class="btnVote disabled">Biểu quyết</span>
             <% } %>
         </div>
         <div class="operation oh">
@@ -45,18 +45,18 @@
                         <div class="topicList">
                             <ul>
                             <% for(i = 0; i< comments.length; i++) { %>
-                                <li><a href="javascript:;" class="f13 c3"><span class="c7"><%==comments[i].author%><% if(comments[i].authorid == post.authorid) { %><i class="cardBtn br fn db c2">楼主</i><% } %>：</span><%== stripCode(comments[i].comment) %></a></li>
+                                <li><a href="javascript:;" class="f13 c3"><span class="c7"><%==comments[i].author%><% if(comments[i].authorid == post.authorid) { %><i class="cardBtn br fn db c2">Chủ bài viết</i><% } %>：</span><%== stripCode(comments[i].comment) %></a></li>
                             <% } %>
                             </ul>
                             <% if(commentCount > 5) { %>
-                            <a href="javascript:;" class="db f12 moreInReply viewcommentBtn" tid="<%= post.tid %>" pid="<%= post.pid %>">更多</a>
+                            <a href="javascript:;" class="db f12 moreInReply viewcommentBtn" tid="<%= post.tid %>" pid="<%= post.pid %>">Hơn</a>
                             <% } %>
                         </div>
                     </div>
                </div>
            <% } %>
             <span class="replyShare db fr">
-                <a class="topicadminMsg" tid="<%= post.tid %>" pid="<%= post.pid %>"><% if(post.status & 1) {%>已屏蔽<%}%></a>
+                <a class="topicadminMsg" tid="<%= post.tid %>" pid="<%= post.pid %>"><% if(post.status & 1) {%>Bị chặn<%}%></a>
                 <% if (member_uid != "0"){%>
                     <a href="javascript:;" id="recommendBtn">
                         <i class=<%=thread.recommend == 1 ? "praise" : "noPraise"%>></i>
