@@ -8,29 +8,29 @@ INSERT INTO pre_common_admingroup SET `admingid`='19',`alloweditpost`='0',`allow
 
 INSERT INTO pre_common_credit_rule VALUES ('1','Đăng bài','post','4','0','0','0','0','2','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('2','Trả lời','reply','4','0','0','0','0','1','0','0','0','0','0','0','');
-INSERT INTO pre_common_credit_rule VALUES ('3','Bài hay','digest','4','0','0','0','0','5','0','0','0','0','0','0','');
+INSERT INTO pre_common_credit_rule VALUES ('3','Quan trọng','digest','4','0','0','0','0','5','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('4','Đính kèm','postattach','4','0','0','0','0','0','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('5','Tải đính kèm','getattach','4','0','0','0','0','0','0','0','0','0','0','0','');
-INSERT INTO pre_common_credit_rule VALUES ('6','Nhắn tin','sendpm','4','0','0','0','0','0','0','0','0','0','0','0','');
+INSERT INTO pre_common_credit_rule VALUES ('6','Gửi tin nhắn','sendpm','4','0','0','0','0','0','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('7','Tìm kiếm','search','4','0','0','0','0','0','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('8','Ghé thăm','promotion_visit','4','0','0','0','0','1','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('9','Đăng ký','promotion_register','4','0','0','0','0','2','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('10','Giao dịch thành công','tradefinished','4','0','0','0','0','0','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('11','Xác nhận Email','realemail','0','0','1','0','0','10','0','0','0','0','0','0','');
-INSERT INTO pre_common_credit_rule VALUES ('12','Sửa Avatar','setavatar','0','0','1','0','0','5','0','0','0','0','0','0','');
-INSERT INTO pre_common_credit_rule VALUES ('13','Xác nhận Video','videophoto','0','0','1','0','0','10','0','0','0','0','0','0','');
-INSERT INTO pre_common_credit_rule VALUES ('14','Tin Hot','hotinfo','4','0','0','0','0','0','0','0','0','0','0','0','');
-INSERT INTO pre_common_credit_rule VALUES ('15','Phần thưởng mỗi ngày','daylogin','1','0','1','0','0','2','0','0','0','0','0','0','');
+INSERT INTO pre_common_credit_rule VALUES ('12','Đặt avatar','setavatar','0','0','1','0','0','5','0','0','0','0','0','0','');
+INSERT INTO pre_common_credit_rule VALUES ('13','Bật webcam','videophoto','0','0','1','0','0','10','0','0','0','0','0','0','');
+INSERT INTO pre_common_credit_rule VALUES ('14','Tin hot','hotinfo','4','0','0','0','0','0','0','0','0','0','0','0','');
+INSERT INTO pre_common_credit_rule VALUES ('15','Đăng nhập hôm nay','daylogin','1','0','1','0','0','2','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('16','Ghé thăm','visit','1','0','10','2','0','2','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('17','Trêu chọc','poke','1','0','10','2','0','1','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('18','Lưu bút','guestbook','1','0','20','2','0','1','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('19','Xem lưu bút','getguestbook','1','0','5','2','0','1','0','0','0','0','0','0','');
-INSERT INTO pre_common_credit_rule VALUES ('20','Ghi chép','doing','1','0','5','0','0','1','0','0','0','0','0','0','');
+INSERT INTO pre_common_credit_rule VALUES ('20','Trạng thái','doing','1','0','5','0','0','1','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('21','Viết blog','publishblog','1','0','3','0','0','2','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('22','Bình chọn','joinpoll','1','0','10','1','0','1','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('23','Chia sẻ','createshare','1','0','3','0','0','1','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('24','Bình luận','comment','1','0','40','1','0','1','0','0','0','0','0','0','');
-INSERT INTO pre_common_credit_rule VALUES ('25','Được bình luận','getcomment','1','0','20','1','0','2','0','0','0','0','0','0','');
+INSERT INTO pre_common_credit_rule VALUES ('25','Xem bình luận','getcomment','1','0','20','1','0','2','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('26','Thêm ứng dụng','installapp','4','0','0','3','0','0','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('27','Dùng ứng dụng','useapp','1','0','10','3','0','0','0','0','0','0','0','0','');
 INSERT INTO pre_common_credit_rule VALUES ('28','Đánh giá','click','1','0','10','1','0','0','0','0','0','0','0','0','');
@@ -82,7 +82,7 @@ INSERT INTO pre_common_member_profile_setting VALUES('birthyear', 1, 0, 0, 'Năm
 INSERT INTO pre_common_member_profile_setting VALUES('birthmonth', 1, 0, 0, 'Tháng sinh', '', 0, 0, 0, 0, 0, 0, 0, 'select', 0, '', '');
 INSERT INTO pre_common_member_profile_setting VALUES('birthday', 1, 0, 0, 'Ngày sinh', '', 0, 0, 0, 0, 0, 0, 0, 'select', 0, '', '');
 INSERT INTO pre_common_member_profile_setting VALUES('constellation', 1, 1, 0, 'Chòm sao', 'Chòm sao(Tự động tính toán theo ngày sinh)', 0, 0, 0, 0, 0, 0, 0, 'text', 0, '', '');
-INSERT INTO pre_common_member_profile_setting VALUES('zodiac', 1, 1, 0, 'Tuổi', 'Tuổi(Tự động tính toán theo ngày sinh)', 0, 0, 0, 0, 0, 0, 0, 'text', 0, '', '');
+INSERT INTO pre_common_member_profile_setting VALUES('zodiac', 1, 1, 0, 'Cung hoàng đạo', 'Cung hoàng đạo(Tự động tính toán theo ngày sinh)', 0, 0, 0, 0, 0, 0, 0, 'text', 0, '', '');
 INSERT INTO pre_common_member_profile_setting VALUES('telephone', 1, 1, 0, 'ĐT', '', 0, 0, 0, 0, 0, 0, 0, 'text', 0, '', '');
 INSERT INTO pre_common_member_profile_setting VALUES('mobile', 1, 1, 0, 'Di động', '', 0, 0, 0, 0, 0, 0, 0, 'text', 0, '', '');
 INSERT INTO pre_common_member_profile_setting VALUES('idcardtype', 1, 1, 0, 'Loại giấy tờ', 'CMND Hộ chiếu Thẻ SV', 0, 0, 0, 0, 0, 0, 0, 'select', 0, 'CMND\nHộ chiếu\nThẻ SV', '');
@@ -197,7 +197,7 @@ INSERT INTO pre_common_setting VALUES ('activityfield','');
 INSERT INTO pre_common_setting VALUES ('activityextnum','0');
 INSERT INTO pre_common_setting VALUES ('activitypp','8');
 INSERT INTO pre_common_setting VALUES ('activitycredit','1');
-INSERT INTO pre_common_setting VALUES ('activitytype','Gặp bạn bè\r\nĐi dạo\r\nTự do\r\nCông ích\r\nOnline');
+INSERT INTO pre_common_setting VALUES ('activitytype','Gặp gỡ\r\nĐi dạo\r\nTự do\r\nCông ích\r\nOnline');
 INSERT INTO pre_common_setting VALUES ('adminemail','');
 INSERT INTO pre_common_setting VALUES ('adminipaccess','');
 INSERT INTO pre_common_setting VALUES ('adminnotifytypes','verifythread,verifypost,verifyuser,verifyblog,verifydoing,verifypic,verifyshare,verifycommontes,verifyrecycle,verifyrecyclepost,verifyarticle,verifyacommont,verifymedal,verify_1,verify_2,verify_3,verify_4,verify_5,verify_6,verify_7');
@@ -822,8 +822,8 @@ INSERT INTO pre_forum_forum (`fid`, `fup`, `type`, `name`, `status`, `displayord
 INSERT INTO pre_forum_forum (`fid`, `fup`, `type`, `name`, `status`, `displayorder`, `styleid`, `threads`, `posts`, `todayposts`, `lastpost`, `allowsmilies`, `allowhtml`, `allowbbcode`, `allowimgcode`, `allowmediacode`, `allowanonymous`, `allowpostspecial`, `allowspecialonly`, `alloweditrules`, `allowfeed`, `allowside`, `recyclebin`, `modnewposts`, `jammer`, `disablewatermark`, `inheritedmod`, `autoclose`, `forumcolumns`, `threadcaches`, `alloweditpost`, `simple`, `modworks`, `allowglobalstick`, `level`, `commoncredits`, `archive`, `recommend`) VALUES(30, 8, 'forum', 'Bóng rổ', 3, 0, 0, 0, 0, 0, '', 1, 0, 1, 1, 0, 0, 127, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0);
 INSERT INTO pre_forum_forum (`fid`, `fup`, `type`, `name`, `status`, `displayorder`, `styleid`, `threads`, `posts`, `todayposts`, `lastpost`, `allowsmilies`, `allowhtml`, `allowbbcode`, `allowimgcode`, `allowmediacode`, `allowanonymous`, `allowpostspecial`, `allowspecialonly`, `alloweditrules`, `allowfeed`, `allowside`, `recyclebin`, `modnewposts`, `jammer`, `disablewatermark`, `inheritedmod`, `autoclose`, `forumcolumns`, `threadcaches`, `alloweditpost`, `simple`, `modworks`, `allowglobalstick`, `level`, `commoncredits`, `archive`, `recommend`) VALUES(31, 8, 'forum', 'Cầu lông', 3, 0, 0, 0, 0, 0, '', 1, 0, 1, 1, 0, 0, 127, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0);
 INSERT INTO pre_forum_forum (`fid`, `fup`, `type`, `name`, `status`, `displayorder`, `styleid`, `threads`, `posts`, `todayposts`, `lastpost`, `allowsmilies`, `allowhtml`, `allowbbcode`, `allowimgcode`, `allowmediacode`, `allowanonymous`, `allowpostspecial`, `allowspecialonly`, `alloweditrules`, `allowfeed`, `allowside`, `recyclebin`, `modnewposts`, `jammer`, `disablewatermark`, `inheritedmod`, `autoclose`, `forumcolumns`, `threadcaches`, `alloweditpost`, `simple`, `modworks`, `allowglobalstick`, `level`, `commoncredits`, `archive`, `recommend`) VALUES(32, 8, 'forum', 'Quần vợt', 3, 0, 0, 0, 0, 0, '', 1, 0, 1, 1, 0, 0, 127, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0);
-INSERT INTO pre_forum_forum (`fid`, `fup`, `type`, `name`, `status`, `displayorder`, `styleid`, `threads`, `posts`, `todayposts`, `lastpost`, `allowsmilies`, `allowhtml`, `allowbbcode`, `allowimgcode`, `allowmediacode`, `allowanonymous`, `allowpostspecial`, `allowspecialonly`, `alloweditrules`, `allowfeed`, `allowside`, `recyclebin`, `modnewposts`, `jammer`, `disablewatermark`, `inheritedmod`, `autoclose`, `forumcolumns`, `threadcaches`, `alloweditpost`, `simple`, `modworks`, `allowglobalstick`, `level`, `commoncredits`, `archive`, `recommend`) VALUES(33, 7, 'forum', 'Trực tuyến', 3, 0, 0, 0, 0, 0, '', 1, 0, 1, 1, 0, 0, 127, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0);
-INSERT INTO pre_forum_forum (`fid`, `fup`, `type`, `name`, `status`, `displayorder`, `styleid`, `threads`, `posts`, `todayposts`, `lastpost`, `allowsmilies`, `allowhtml`, `allowbbcode`, `allowimgcode`, `allowmediacode`, `allowanonymous`, `allowpostspecial`, `allowspecialonly`, `alloweditrules`, `allowfeed`, `allowside`, `recyclebin`, `modnewposts`, `jammer`, `disablewatermark`, `inheritedmod`, `autoclose`, `forumcolumns`, `threadcaches`, `alloweditpost`, `simple`, `modworks`, `allowglobalstick`, `level`, `commoncredits`, `archive`, `recommend`) VALUES(35, 7, 'forum', 'Trực tuyến', 3, 0, 0, 0, 0, 0, '', 1, 0, 1, 1, 0, 0, 127, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0);
+INSERT INTO pre_forum_forum (`fid`, `fup`, `type`, `name`, `status`, `displayorder`, `styleid`, `threads`, `posts`, `todayposts`, `lastpost`, `allowsmilies`, `allowhtml`, `allowbbcode`, `allowimgcode`, `allowmediacode`, `allowanonymous`, `allowpostspecial`, `allowspecialonly`, `alloweditrules`, `allowfeed`, `allowside`, `recyclebin`, `modnewposts`, `jammer`, `disablewatermark`, `inheritedmod`, `autoclose`, `forumcolumns`, `threadcaches`, `alloweditpost`, `simple`, `modworks`, `allowglobalstick`, `level`, `commoncredits`, `archive`, `recommend`) VALUES(33, 7, 'forum', 'Games online', 3, 0, 0, 0, 0, 0, '', 1, 0, 1, 1, 0, 0, 127, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0);
+INSERT INTO pre_forum_forum (`fid`, `fup`, `type`, `name`, `status`, `displayorder`, `styleid`, `threads`, `posts`, `todayposts`, `lastpost`, `allowsmilies`, `allowhtml`, `allowbbcode`, `allowimgcode`, `allowmediacode`, `allowanonymous`, `allowpostspecial`, `allowspecialonly`, `alloweditrules`, `allowfeed`, `allowside`, `recyclebin`, `modnewposts`, `jammer`, `disablewatermark`, `inheritedmod`, `autoclose`, `forumcolumns`, `threadcaches`, `alloweditpost`, `simple`, `modworks`, `allowglobalstick`, `level`, `commoncredits`, `archive`, `recommend`) VALUES(35, 7, 'forum', 'Games offline', 3, 0, 0, 0, 0, 0, '', 1, 0, 1, 1, 0, 0, 127, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0);
 
 
 
