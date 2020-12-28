@@ -59,7 +59,7 @@ INSERT INTO pre_common_cron VALUES ('18','0','system','Tối ưu bảng member h
 INSERT INTO pre_common_cron VALUES ('19','1','system','Thống kê bài viết nóng','cron_todayheats_daily.php','1269746623','1269792000','-1','-1','0','0');
 INSERT INTO pre_common_cron VALUES ('20','1','system','Cập nhật bài viết mới','cron_security_cleanup_lastpost.php','1269746623','1269792000','-1','-1','7','0');
 
-INSERT INTO pre_common_friendlink VALUES ('1','0','DiscuzVN','http://www.discuz.net','Hỗ trợ Discuz Việt Nam','static/image/common/logo_88_31.gif','2');
+INSERT INTO pre_common_friendlink VALUES ('1','0','DiscuzVN','https://discuzvn.net','Hỗ trợ Discuz Việt Nam','static/image/common/logo_88_31.gif','2');
 
 
 
@@ -881,15 +881,15 @@ INSERT INTO pre_forum_imagetype VALUES ('3','1','Người xanh','smiley','3','gr
 
 
 INSERT INTO pre_forum_medal VALUES ('1','Medal No.1','0','medal1.gif','0','0','Huân chương hạng 1','0','','0','0');
-INSERT INTO pre_forum_medal VALUES ('2','Medal No.1','0','medal2.gif','0','0','Huân chương hạng 2','0','','0','0');
-INSERT INTO pre_forum_medal VALUES ('3','Medal No.1','0','medal3.gif','0','0','Huân chương hạng 3','0','','0','0');
-INSERT INTO pre_forum_medal VALUES ('4','Medal No.1','0','medal4.gif','0','0','Huân chương hạng 4','0','','0','0');
-INSERT INTO pre_forum_medal VALUES ('5','Medal No.1','0','medal5.gif','0','0','Huân chương hạng 5','0','','0','0');
-INSERT INTO pre_forum_medal VALUES ('6','Medal No.1','0','medal6.gif','0','0','Huân chương hạng 6','0','','0','0');
-INSERT INTO pre_forum_medal VALUES ('7','Medal No.1','0','medal7.gif','0','0','Huân chương hạng 7','0','','0','0');
-INSERT INTO pre_forum_medal VALUES ('8','Medal No.1','0','medal8.gif','0','0','Huân chương hạng 8','0','','0','0');
-INSERT INTO pre_forum_medal VALUES ('9','Medal No.1','0','medal9.gif','0','0','Huân chương hạng 9','0','','0','0');
-INSERT INTO pre_forum_medal VALUES ('10','Medal No.1','0','medal10.gif','0','0','Huân chương hạng 10','0','','0','0');
+INSERT INTO pre_forum_medal VALUES ('2','Medal No.2','0','medal2.gif','0','0','Huân chương hạng 2','0','','0','0');
+INSERT INTO pre_forum_medal VALUES ('3','Medal No.3','0','medal3.gif','0','0','Huân chương hạng 3','0','','0','0');
+INSERT INTO pre_forum_medal VALUES ('4','Medal No.4','0','medal4.gif','0','0','Huân chương hạng 4','0','','0','0');
+INSERT INTO pre_forum_medal VALUES ('5','Medal No.5','0','medal5.gif','0','0','Huân chương hạng 5','0','','0','0');
+INSERT INTO pre_forum_medal VALUES ('6','Medal No.6','0','medal6.gif','0','0','Huân chương hạng 6','0','','0','0');
+INSERT INTO pre_forum_medal VALUES ('7','Medal No.7','0','medal7.gif','0','0','Huân chương hạng 7','0','','0','0');
+INSERT INTO pre_forum_medal VALUES ('8','Medal No.8','0','medal8.gif','0','0','Huân chương hạng 8','0','','0','0');
+INSERT INTO pre_forum_medal VALUES ('9','Medal No.9','0','medal9.gif','0','0','Huân chương hạng 9','0','','0','0');
+INSERT INTO pre_forum_medal VALUES ('10','Medal No.10','0','medal10.gif','0','0','Huân chương hạng 10','0','','0','0');
 
 
 
