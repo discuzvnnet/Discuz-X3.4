@@ -76,15 +76,15 @@ $lang = array(
 		<tr>
 		<td valign="top">{avatar}</td>
 		<td valign="top">
-		<h3>Hi，我是{username}，邀请您也加入{sitename}并成为我的好友</h3><br>
-		请加入到我的好友中，您就可以了解我的近况，与我一起交流，随时与我保持联系。<br>
+		<h3>Xin chào, tôi là {username}, tôi mời bạn tham gia {sitename} và trở thành bạn của tôi</h3><br>
+		 Hãy tham gia cùng bạn bè của tôi, bạn có thể hiểu tình hình hiện tại của tôi, liên lạc với tôi và giữ liên lạc với tôi bất cứ lúc nào.<br>
 		<br>
-		邀请附言：<br>{saymsg}
+		Invitation post:<br>{saymsg}
 		<br><br>
-		<strong>请您点击以下链接，接受好友邀请：</strong><br>
+		<strong>Vui lòng nhấp vào liên kết sau để chấp nhận lời mời kết bạn:</strong><br>
 		<a href="{inviteurl}">{inviteurl}</a><br>
 		<br>
-		<strong>如果您拥有{sitename}上面的账号，请点击以下链接查看我的个人主页：</strong><br>
+		<strong>Nếu bạn có tài khoản trên {sitename}, vui lòng nhấp vào liên kết sau để xem trang chủ cá nhân của tôi:</strong><br>
 		<a href="{siteurl}home.php?mod=space&uid={uid}">{siteurl}home.php?mod=space&uid={uid}</a><br>
 		</td></tr></table>',
 
@@ -93,15 +93,15 @@ $lang = array(
 		<tr>
 		<td valign="top">{avatar}</td>
 		<td valign="top">
-		<h3>Hi，我是{username}，在{sitename}上玩 {appname}，邀请您也加入一起玩</h3><br>
+		<h3>Xin chào, tôi là {username} , tôi đang chơi {appname} trên {sitename}, tôi mời bạn tham gia và chơi</h3><br>
 		<br>
-		邀请附言：<br>
+		Invitation post:<br>
 		{saymsg}
 		<br><br>
-		<strong>请您点击以下链接，接受好友邀请一起玩{appname}：</strong><br>
+		<strong>Vui lòng nhấp vào liên kết sau để chấp nhận lời mời chơi {appname} của bạn bè bạn:</strong><br>
 		<a href="{inviteurl}">{inviteurl}</a><br>
 		<br>
-		<strong>如果您拥有{sitename}上面的账号，请点击以下链接查看我的个人主页：</strong><br>
+		<strong>Nếu bạn đã là thành viên của {sitename}, vui lòng nhấp vào liên kết bên dưới để truy cập tiểu sử của tôi:</strong><br>
 		<a href="{siteurl}home.php?mod=space&uid={uid}">{siteurl}home.php?mod=space&uid={uid}</a><br>
 		</td></tr></table>',
 

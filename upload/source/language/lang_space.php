@@ -101,13 +101,13 @@ $lang = array(
 	'block3' => 'Kiểu 3',
 	'block4' => 'Kiểu 4',
 	'block5' => 'Kiểu 5',
-	'blockdata' => array('personalinfo' => '个人资料', 'profile' => '头像', 'doing' => '记录', 'feed' => '动态',
-				'blog' => '日志', 'stickblog' => '置顶日志', 'album' => '相册', 'friend' => '好友',
-				'visitor' => '最近访客', 'wall' => '留言板', 'share' => '分享',
-				'thread' => '主题', 'group'=>$_G[setting][navs][3][navname],'music'=>'音乐盒',
-				'statistic' => '统计信息','myapp' => '应用',
-				'block1'=>'自由模块1', 'block2'=>'自由模块2', 'block3'=>'自由模块3',
-				'block4'=>'自由模块4','block5'=>'自由模块5'),
+	'blockdata' => array('personalinfo' => 'Thông tin cá nhân', 'profile' => 'Hình đại diện', 'doing' => 'Trạng thái', 'feed' => 'Đã cập nhật',
+				'blog' => 'Blog', 'stickblog' => 'Stick blog', 'album' => 'Album', 'friend' => 'Bạn bè',
+				'visitor' => 'Khách ghé thăm gần đây', 'wall' => 'Bảng tin', 'share' => 'Chia sẻ',
+				'thread' => 'Chủ đề', 'group'=>$_G[setting][navs][3][navname],'music'=>'Âm nhạc',
+				'statistic' => 'Số liệu thống kê','myapp' => 'Ứng dụng',
+				'block1'=>'Block 1', 'block2'=>'Block 2', 'block3'=>'Block 3',
+				'block4'=>'Block 4','block5'=>'Block 5'),
 
 	'block_title' => '<div class="blocktitle title"><span>{bname}</span>{more}</div>',
 	'blog_li' => '<dl class="bbda cl"><dt><a href="home.php?mod=space&uid={uid}&do=blog&id={blogid}" target="_blank">{subject}</a><span class="xg2 xw0"> {date}</span></dt>',
@@ -124,8 +124,8 @@ $lang = array(
 							<input type="hidden" name="refer" value="home.php?mod=space&uid={uid}" />
 							<input type="hidden" name="id" value="{uid}" />
 							<input type="hidden" name="idtype" value="uid" />
-							<input type="hidden" name="commentsubmit" value="true" />' : ($_G['connectguest'] ? '<div class="pt hm">您需要 <a href="member.php?mod=connect" class="xi2">完善帐号信息</a> 或 <a href="member.php?mod=connect&ac=bind" class="xi2">绑定已有帐号</a> 后才可以回帖</div>' : '<div class="pt hm">你需要登录后才可以留言 <a href="member.php?mod=logging&action=login" onclick="showWindow(\'login\', this.href)" class="xi2">登录</a> | <a href="member.php?mod='.$_G['setting']['regname'].'" class="xi2">'.$_G['setting']['reglinkname'].'</a></div>')).'
-							<p class="ptn"><button '.($_G['uid'] ? 'type="submit"' : 'type="button" onclick="showWindow(\'login\', \'member.php?mod=logging&action=login&guestmessage=yes\')"').' name="commentsubmit_btn" value="true" id="commentsubmit_btn" class="pn"><strong>留言</strong></button></p>
+							<input type="hidden" name="commentsubmit" value="true" />' : ($_G['connectguest'] ? '<div class="pt hm">Bạn có thể <a href="member.php?mod=connect" class="xi2">Liên kết nó với tài khoản của bạn</a> hoặc <a href="member.php?mod=connect&ac=bind" class="xi2">Ràng buộc tài khoản</a> Để có thể bày tỏ ý kiến ​​của họ</div>' : '<div class="pt hm">Bạn cần phải <a href="member.php?mod=logging&action=login" onclick="showWindow(\'login\', this.href)" class="xi2">Đăng nhập</a> | <a href="member.php?mod='.$_G['setting']['regname'].'" class="xi2">'.$_G['setting']['reglinkname'].'</a></div>')).'
+							<p class="ptn"><button '.($_G['uid'] ? 'type="submit"' : 'type="button" onclick="showWindow(\'login\', \'member.php?mod=logging&action=login&guestmessage=yes\')"').' name="commentsubmit_btn" value="true" id="commentsubmit_btn" class="pn"><strong>Để lại lời nhắn</strong></button></p>
 							<input type="hidden" name="handlekey" value="commentwall_{uid}" />
 							<span id="return_commentwall_{uid}"></span>
 							<input type="hidden" name="formhash" value="{FORMHASH}" />
